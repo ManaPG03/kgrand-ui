@@ -67,7 +67,7 @@ export default function HomePage() {
       </div>
 
       {/* ── PG Collection ─────────────────────────────────────────────────── */}
-      <section className="py-12 bg-surface">
+      <section className="py-10 bg-surface">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-end mb-8 gap-4">
             <div>
@@ -92,9 +92,10 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {pgs.map((pg) => (
-              <div
+              <Link
                 key={pg.slug}
-                className="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient hover:shadow-ambient-lg transition-all"
+                href={`/pgs/${pg.slug}`}
+                className="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient hover:shadow-ambient-lg transition-all block"
               >
                 <div className="relative h-52">
                   <Image
@@ -137,22 +138,19 @@ export default function HomePage() {
                         <span className="text-sm font-normal text-on-surface-variant">/mo</span>
                       </span>
                     </div>
-                    <Link
-                      href={`/pgs/${pg.slug}`}
-                      className="bg-surface-container-high text-primary px-4 py-2 rounded-lg text-sm font-bold hover:bg-primary hover:text-white transition-colors"
-                    >
-                      Check Availability
-                    </Link>
+                    <span className="bg-surface-container-high text-primary px-4 py-2 rounded-lg text-sm font-bold group-hover:bg-primary group-hover:text-white transition-colors">
+                      View Details
+                    </span>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
       {/* ── Why Kgrand Bento ──────────────────────────────────────────────── */}
-      <section className="py-12 bg-surface-container-low">
+      <section className="py-10 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-12 gap-6">
             <div className="col-span-12 lg:col-span-4 self-center">
@@ -227,7 +225,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Hotel Collection ──────────────────────────────────────────────── */}
-      <section className="py-12 bg-surface-container-lowest">
+      <section className="py-10 bg-surface-container-lowest">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center mb-8 gap-3">
             <h2 className="text-3xl font-extrabold text-primary tracking-tight">
@@ -281,7 +279,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Community Hub ─────────────────────────────────────────────────── */}
-      <section className="py-12 bg-surface overflow-hidden">
+      <section className="py-10 bg-surface overflow-hidden">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="relative">
@@ -344,7 +342,7 @@ export default function HomePage() {
       </section>
 
       {/* ── CTA Banner ────────────────────────────────────────────────────── */}
-      <section className="py-12 bg-primary">
+      <section className="py-10 bg-primary">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-black text-white mb-3">
             Ready to Find Your Perfect Space?
@@ -354,12 +352,13 @@ export default function HomePage() {
             needs and budget.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Link
-              href="/enquire"
-              className="bg-tertiary-fixed text-on-tertiary-fixed font-bold px-6 py-3 rounded-full hover:opacity-90 transition-opacity"
+            <a
+              href={`mailto:${contact.email}`}
+              className="bg-tertiary-fixed text-on-tertiary-fixed font-bold px-6 py-3 rounded-full hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
             >
-              Enquire Now
-            </Link>
+              <span className="material-symbols-outlined text-base">mail</span>
+              Email Us
+            </a>
             <a
               href={contact.whatsapp}
               target="_blank"
@@ -368,6 +367,13 @@ export default function HomePage() {
             >
               <span className="material-symbols-outlined">chat</span>
               WhatsApp Us
+            </a>
+            <a
+              href={`tel:${contact.phone}`}
+              className="bg-white/10 text-white border border-white/20 font-bold px-6 py-3 rounded-full hover:bg-white/20 transition-all flex items-center justify-center gap-2"
+            >
+              <span className="material-symbols-outlined">call</span>
+              Call Us
             </a>
           </div>
         </div>

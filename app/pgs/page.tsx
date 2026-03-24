@@ -78,9 +78,10 @@ export default function PGsPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {pgs.map((pg) => (
-              <div
+              <Link
                 key={pg.slug}
-                className="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient hover:shadow-ambient-lg transition-all flex flex-col"
+                href={`/pgs/${pg.slug}`}
+                className="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient hover:shadow-ambient-lg transition-all flex flex-col block"
               >
                 <div className="relative h-52 flex-shrink-0">
                   <Image
@@ -160,15 +161,12 @@ export default function PGsPage() {
                         <span className="text-sm font-normal text-on-surface-variant">/mo</span>
                       </span>
                     </div>
-                    <Link
-                      href={`/pgs/${pg.slug}`}
-                      className="bg-surface-container-high text-primary px-4 py-2 rounded-lg text-sm font-bold hover:bg-primary hover:text-white transition-colors"
-                    >
+                    <span className="bg-surface-container-high text-primary px-4 py-2 rounded-lg text-sm font-bold group-hover:bg-primary group-hover:text-white transition-colors">
                       View Details
-                    </Link>
+                    </span>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

@@ -160,7 +160,7 @@ export default function AboutPage() {
                 <div className="flex-1">
                   <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-4">
                     <div>
-                      <h3 className="text-xl font-black text-primary">Kotla Karthik</h3>
+                      <h3 className="text-xl font-black text-tertiary-fixed-dim">Kotla Karthik</h3>
                       <p className="text-secondary font-semibold text-sm">Founder &amp; CEO</p>
                     </div>
                     <div className="sm:ml-auto">
@@ -170,7 +170,7 @@ export default function AboutPage() {
                     </div>
                   </div>
 
-                  <p className="text-on-surface-variant leading-relaxed mb-4">
+                  <p className="text-white leading-relaxed mb-4">
                     Kotla Karthik founded Kgrand with a clear vision: to make premium
                     co-living accessible to every professional in Hyderabad&apos;s booming
                     tech ecosystem. With a background in hospitality management and a deep
@@ -178,20 +178,20 @@ export default function AboutPage() {
                     from the ground up - personally overseeing every property launch and
                     resident experience initiative.
                   </p>
-                  <p className="text-on-surface-variant leading-relaxed mb-6">
+                  <p className="text-white leading-relaxed mb-6">
                     His philosophy is straightforward: a well-rested, well-fed professional
                     is a more productive and happier one. Every feature of every Kgrand
                     property reflects that belief.
                   </p>
 
                   <div className="flex flex-wrap gap-3">
-                    <Link
-                      href="/enquire"
+                    <a
+                      href={`tel:${contact.phone}`}
                       className="cta-gradient text-white px-5 py-2.5 rounded-lg font-bold text-sm flex items-center gap-2 hover:opacity-90 transition-opacity"
                     >
-                      Get in Touch
-                      <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                    </Link>
+                      <span className="material-symbols-outlined text-sm">call</span>
+                      Call Us
+                    </a>
                     <a
                       href={contact.whatsapp}
                       target="_blank"

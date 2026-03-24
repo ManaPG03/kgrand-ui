@@ -19,6 +19,7 @@ export type PG = {
   heroImage: string;
   heroAlt: string;
   mapEmbed: string;
+  mapDirections: string;
   amenities: { icon: string; title: string; description: string }[];
   galleryImages: { src: string; alt: string; label?: string }[];
   proximity: { place: string; time: string }[];
@@ -35,7 +36,9 @@ export type Hotel = {
   heroAlt: string;
   tagline: string;
   description: string;
+  bookingUrl: string;
   mapEmbed: string;
+  mapDirections: string;
   amenities: { icon: string; label: string }[];
   rooms: {
     name: string;
@@ -70,7 +73,9 @@ export const pgs: PG[] = [
       "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&q=80",
     heroAlt: "Luxury PG room with premium wooden flooring and plush bedding",
     mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2960655696927!2d78.3719!3d17.4478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93dc8c5d69df%3A0x19688bbb8b33c5a2!2sHITEC%20City%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1711234567890!5m2!1sen!2sin",
+      "https://maps.google.com/maps?q=17.4478,78.3719&z=17&output=embed",
+    mapDirections:
+      "https://www.google.com/maps/dir/?api=1&destination=17.4478,78.3719",
     amenities: [
       { icon: "restaurant", title: "Gourmet Meals", description: "Daily breakfast and dinner curated by chefs." },
       { icon: "security", title: "24/7 Security", description: "CCTV coverage and professional guards on site." },
@@ -127,7 +132,9 @@ export const pgs: PG[] = [
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80",
     heroAlt: "Elite shared living space with minimalist interior design",
     mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.8!2d78.358!3d17.44!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93cd85b2db91%3A0xdae72af90c04c1da!2sGachibowli%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1711234567892!5m2!1sen!2sin",
+      "https://maps.google.com/maps?q=17.44,78.358&z=17&output=embed",
+    mapDirections:
+      "https://www.google.com/maps/dir/?api=1&destination=17.44,78.358",
     amenities: [
       { icon: "restaurant", title: "Home-Style Meals", description: "Nutritious meals prepared fresh three times daily." },
       { icon: "security", title: "24/7 Security", description: "CCTV and biometric entry at all access points." },
@@ -184,7 +191,9 @@ export const pgs: PG[] = [
       "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=1200&q=80",
     heroAlt: "Bright airy PG room with comfortable bedding and workspace",
     mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.1!2d78.3639!3d17.462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9151c26fd6a5%3A0xae4f200c09cb7f64!2sKondapur%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1711234567893!5m2!1sen!2sin",
+      "https://maps.google.com/maps?q=17.462,78.3639&z=17&output=embed",
+    mapDirections:
+      "https://www.google.com/maps/dir/?api=1&destination=17.462,78.3639",
     amenities: [
       { icon: "restaurant", title: "Home-Style Meals", description: "Nutritious breakfast and dinner served daily." },
       { icon: "security", title: "24/7 Security", description: "CCTV surveillance and biometric access control." },
@@ -236,13 +245,16 @@ export const hotels: Hotel[] = [
     pricePerNight: "₹4,500",
     rating: 4.9,
     heroImage:
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80",
-    heroAlt: "Luxury hotel room interior with warm ambient lighting and executive desk",
+      "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1920&q=90",
+    heroAlt: "Luxury hotel suite with king bed, warm lighting and modern interiors",
     tagline: "Productive Stays for High-Achievers",
     description:
       "Designed for the IT professionals of HITEC City. Quiet zones, seamless tech integration, and curated comfort in the heart of Madhapur.",
+    bookingUrl: "https://www.booking.com/searchresults.html?ss=Madhapur%2C+Hyderabad",
     mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3!2d78.3948!3d17.4486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93dc0c4c08c1%3A0x9f7e15ec5caba16a!2sMadhapur%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1711234567891!5m2!1sen!2sin",
+      "https://maps.google.com/maps?q=17.4486,78.3948&z=17&output=embed",
+    mapDirections:
+      "https://www.google.com/maps/dir/?api=1&destination=17.4486,78.3948",
     amenities: [
       { icon: "wifi", label: "Free Fiber Wi-Fi" },
       { icon: "restaurant", label: "In-room Dining" },
@@ -292,13 +304,16 @@ export const hotels: Hotel[] = [
     pricePerNight: "₹5,200",
     rating: 4.8,
     heroImage:
-      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&q=80",
-    heroAlt: "Luxury boutique hotel lobby with plush seating and modern design",
+      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1920&q=90",
+    heroAlt: "Premium hotel room with elegant decor and city view",
     tagline: "Executive Luxury in the Financial District",
     description:
       "Kgrand Suites sits at the heart of Gachibowli's Financial District, offering premium suites, rooftop pool access, and an executive lounge for the modern business traveller.",
+    bookingUrl: "https://www.booking.com/searchresults.html?ss=Gachibowli%2C+Hyderabad",
     mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.8!2d78.358!3d17.44!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93cd85b2db91%3A0xdae72af90c04c1da!2sGachibowli%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1711234567892!5m2!1sen!2sin",
+      "https://maps.google.com/maps?q=17.44,78.358&z=17&output=embed",
+    mapDirections:
+      "https://www.google.com/maps/dir/?api=1&destination=17.44,78.358",
     amenities: [
       { icon: "laptop_mac", label: "Work Desks" },
       { icon: "local_bar", label: "Executive Lounge" },

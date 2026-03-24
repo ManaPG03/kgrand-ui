@@ -207,7 +207,7 @@ export default async function PGDetailPage({
 
               <div>
                 <h2 className="text-lg font-bold text-primary mb-3">Location</h2>
-                <div className="rounded-xl overflow-hidden shadow-ambient h-64">
+                <div className="relative rounded-xl overflow-hidden shadow-ambient h-64">
                   <iframe
                     src={pg.mapEmbed}
                     width="100%"
@@ -218,6 +218,16 @@ export default async function PGDetailPage({
                     referrerPolicy="no-referrer-when-downgrade"
                     title={`Map for ${pg.name}`}
                   />
+                  {/* Get Directions button */}
+                  <a
+                    href={pg.mapDirections}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute bottom-3 right-3 z-10 inline-flex items-center gap-1.5 bg-white text-primary px-4 py-2 rounded-lg text-sm font-bold shadow-lg hover:bg-primary hover:text-white transition-colors"
+                  >
+                    <span className="material-symbols-outlined text-base">directions</span>
+                    Get Directions
+                  </a>
                 </div>
               </div>
             </div>
@@ -238,14 +248,6 @@ export default async function PGDetailPage({
                   </div>
 
                   <div className="p-4 space-y-3">
-                    <Link
-                      href="/enquire"
-                      className="cta-gradient text-white w-full py-3 rounded-lg font-bold text-sm flex items-center justify-center gap-2 hover:opacity-90 transition-opacity"
-                    >
-                      <span className="material-symbols-outlined">edit_note</span>
-                      Enquire Now
-                    </Link>
-
                     <a
                       href={`tel:${contact.phone}`}
                       className="w-full py-2.5 rounded-lg font-bold text-sm border-2 border-surface-container-high text-primary flex items-center justify-center gap-2 hover:bg-surface-container-low transition-colors"

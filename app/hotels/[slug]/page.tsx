@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { hotels, contact } from '@/lib/data';
+import RoomImageLightbox from '@/components/RoomImageLightbox';
 import type { Metadata } from 'next';
 
 type Props = {
@@ -27,7 +28,7 @@ export default async function HotelDetailPage({ params }: Props) {
   return (
     <>
       {/* ── Hero ───────────────────────────────────────────────────────── */}
-      <section className="relative h-[500px] overflow-hidden">
+      <section className="relative w-full h-[75vh] min-h-[500px] overflow-hidden">
         <Image
           src={hotel.heroImage}
           alt={hotel.heroAlt}
@@ -93,67 +94,7 @@ export default async function HotelDetailPage({ params }: Props) {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {hotel.rooms.map((room) => (
-              <div
-                key={room.name}
-                className="bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient hover:shadow-ambient-lg transition-all group"
-              >
-                <div className="relative aspect-[16/9]">
-                  <Image
-                    src={room.image}
-                    alt={room.imageAlt}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  {room.badge && (
-                    <span className="absolute top-3 left-3 bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">
-                      {room.badge}
-                    </span>
-                  )}
-                </div>
-
-                <div className="p-4">
-                  <div className="flex items-start justify-between gap-3 mb-3">
-                    <h3 className="text-lg font-bold text-primary">{room.name}</h3>
-                    <span className="text-lg font-black text-primary flex-shrink-0">{room.price}</span>
-                  </div>
-
-                  <div className="flex items-center gap-3 text-sm text-on-surface-variant mb-4">
-                    <span className="flex items-center gap-1">
-                      <span className="material-symbols-outlined text-sm">straighten</span>
-                      {room.size}
-                    </span>
-                  </div>
-
-                  <ul className="grid grid-cols-2 gap-1.5 mb-4">
-                    {room.features.map((feature) => (
-                      <li
-                        key={feature}
-                        className="flex items-center gap-1.5 text-sm text-on-surface-variant"
-                      >
-                        <span
-                          className="material-symbols-outlined text-secondary text-sm"
-                          style={{ fontVariationSettings: "'FILL' 1" }}
-                        >
-                          check_circle
-                        </span>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <Link
-                    href="/enquire"
-                    className="cta-gradient text-white w-full py-2.5 rounded-lg font-bold text-sm flex items-center justify-center gap-2 hover:opacity-90 transition-opacity"
-                  >
-                    Book This Room
-                    <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
+          <RoomImageLightbox rooms={hotel.rooms} bookingUrl={hotel.bookingUrl} />
         </div>
       </section>
 
@@ -199,7 +140,7 @@ export default async function HotelDetailPage({ params }: Props) {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
-            <div className="rounded-xl overflow-hidden shadow-ambient-lg">
+            <div className="relative rounded-xl overflow-hidden shadow-ambient-lg">
               <iframe
                 src={hotel.mapEmbed}
                 width="100%"
@@ -210,6 +151,16 @@ export default async function HotelDetailPage({ params }: Props) {
                 referrerPolicy="no-referrer-when-downgrade"
                 title={`Map showing location of ${hotel.name}`}
               />
+              {/* Get Directions button */}
+              <a
+                href={hotel.mapDirections}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute bottom-3 right-3 z-10 inline-flex items-center gap-1.5 bg-white text-primary px-4 py-2 rounded-lg text-sm font-bold shadow-lg hover:bg-primary hover:text-white transition-colors"
+              >
+                <span className="material-symbols-outlined text-base">directions</span>
+                Get Directions
+              </a>
             </div>
 
             <div className="bg-surface-container-lowest rounded-xl shadow-ambient overflow-hidden">
@@ -255,12 +206,15 @@ export default async function HotelDetailPage({ params }: Props) {
               and bespoke extended-stay packages.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link
-                href="/enquire"
-                className="bg-tertiary-fixed text-on-tertiary-fixed font-bold px-6 py-3 rounded-full hover:opacity-90 transition-opacity"
+              <a
+                href={hotel.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-tertiary-fixed text-on-tertiary-fixed font-bold px-6 py-3 rounded-full hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
               >
-                Enquire &amp; Book
-              </Link>
+                <span className="material-symbols-outlined text-base">hotel</span>
+                Book This Hotel
+              </a>
               <a
                 href={contact.whatsapp}
                 target="_blank"

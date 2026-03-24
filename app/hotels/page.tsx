@@ -132,9 +132,10 @@ export default function HotelsPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {hotels.map((hotel) => (
-              <div
+              <Link
                 key={hotel.slug}
-                className="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-ambient hover:shadow-ambient-lg transition-all"
+                href={`/hotels/${hotel.slug}`}
+                className="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-ambient hover:shadow-ambient-lg transition-all block"
               >
                 <div className="relative aspect-[16/10]">
                   <Image
@@ -202,16 +203,13 @@ export default function HotelsPage() {
                       <span className="material-symbols-outlined text-sm">location_on</span>
                       {hotel.location}
                     </div>
-                    <Link
-                      href={`/hotels/${hotel.slug}`}
-                      className="cta-gradient text-white px-5 py-2.5 rounded-lg font-bold text-sm flex items-center justify-center gap-2 hover:opacity-90 transition-opacity w-full sm:w-auto"
-                    >
+                    <span className="cta-gradient text-white px-5 py-2.5 rounded-lg font-bold text-sm flex items-center justify-center gap-2 group-hover:opacity-90 transition-opacity w-full sm:w-auto">
                       View Details
                       <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                    </Link>
+                    </span>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

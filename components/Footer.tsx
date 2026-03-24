@@ -4,7 +4,6 @@ import { contact } from '@/lib/data';
 const solutions = [
   { label: "Find a PG", href: '/pgs' },
   { label: "Book a Hotel", href: '/hotels' },
-  { label: "Enquire Now", href: '/enquire' },
 ];
 
 const company = [

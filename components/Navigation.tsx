@@ -67,11 +67,12 @@ export default function Navigation() {
         {/* Hamburger - mobile */}
         <button
           onClick={() => setMenuOpen((v) => !v)}
-          className="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors"
+          className="lg:hidden relative z-50 flex items-center justify-center w-11 h-11 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors cursor-pointer touch-manipulation"
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
+          type="button"
         >
-          <span className="material-symbols-outlined text-2xl">
+          <span className="material-symbols-outlined text-2xl pointer-events-none">
             {menuOpen ? 'close' : 'menu'}
           </span>
         </button>

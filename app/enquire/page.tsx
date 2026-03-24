@@ -70,13 +70,13 @@ export default function EnquirePage() {
             >
               <div className="relative">
                 <div className="w-16 h-16 bg-primary-container rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                  <span className="material-symbols-outlined text-4xl text-primary">mail</span>
+                  <span className="material-symbols-outlined text-4xl text-white">mail</span>
                 </div>
                 <h3 className="text-xl font-extrabold text-primary mb-2">Email</h3>
                 <p className="text-on-surface-variant text-sm mb-4">
                   Prefer email? We reply within a few hours.
                 </p>
-                <span className="inline-flex items-center gap-1 text-sm font-bold bg-primary-container text-on-primary-container px-4 py-2 rounded-full group-hover:bg-primary group-hover:text-white transition-colors">
+                <span className="inline-flex items-center gap-1 text-sm font-bold bg-primary-container text-on-primary-container px-4 py-2 rounded-full group-hover:bg-primary text-white transition-colors">
                   Send Email
                   <span className="material-symbols-outlined text-sm">arrow_forward</span>
                 </span>
