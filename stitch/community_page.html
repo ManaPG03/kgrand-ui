@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Community Hub | Kgrand</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-lowest": "#ffffff",
+                        "on-background": "#191c1d",
+                        "inverse-primary": "#bbc6e2",
+                        "tertiary": "#190f00",
+                        "on-tertiary-fixed": "#261900",
+                        "primary-fixed": "#d7e2ff",
+                        "on-primary-container": "#828da7",
+                        "secondary": "#47607e",
+                        "on-surface-variant": "#45474d",
+                        "surface-dim": "#d9dadb",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e1e3e4",
+                        "secondary-fixed-dim": "#afc9ea",
+                        "tertiary-container": "#342300",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#1b263b",
+                        "on-primary-fixed": "#101b30",
+                        "tertiary-fixed-dim": "#e9c176",
+                        "surface-container-low": "#f3f4f5",
+                        "outline": "#75777d",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface-bright": "#f8f9fa",
+                        "on-surface": "#191c1d",
+                        "surface": "#f8f9fa",
+                        "secondary-container": "#c2dcff",
+                        "inverse-on-surface": "#f0f1f2",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#5d4201",
+                        "on-tertiary-container": "#ab8844",
+                        "inverse-surface": "#2e3132",
+                        "outline-variant": "#c5c6cd",
+                        "primary-fixed-dim": "#bbc6e2",
+                        "tertiary-fixed": "#ffdea5",
+                        "surface-tint": "#545e76",
+                        "surface-container": "#edeeef",
+                        "on-secondary-fixed-variant": "#2f4865",
+                        "primary": "#051125",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#3c475d",
+                        "background": "#f8f9fa",
+                        "on-secondary-fixed": "#001d36",
+                        "surface-container-high": "#e7e8e9",
+                        "secondary-fixed": "#d1e4ff",
+                        "on-secondary-container": "#48617e"
+                    },
+                    fontFamily: {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #051125 0%, #1b263b 100%);
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-background min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-md shadow-[0_4px_20px_rgba(5,17,37,0.04)]">
+<div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center w-full">
+<div class="flex items-center gap-2">
+<img alt="Kgrand Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW_xNeY6EdysDu3tftSj2XtHILu0fxbL-6TJW-R8X3rCqNwAbS4qtBfF0n7jnWKTVcrCcfN2ukukYJQKU69lPg9lwn_SFZGoLCXtlTUE3VRnh9M20O_69NNRztR2lTKL3MmILuG_rtyg2GX7qi20yvCUAdBclYVS8A84Y9VqXDhDkm4YfKZ159yh1s_xmcexhfmXoO9q6omj38vCl2TvRGWLjAOJ80stav6cIQRLqRWjmD2m70onVpcUTu4G_bpvt1XGgYzbLzfKgb"/>
+<span class="text-2xl font-black text-slate-900 dark:text-slate-50 tracking-tighter">Kgrand</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors font-semibold tracking-tight" href="#">Our PGs</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors font-semibold tracking-tight" href="#">Our Hotels</a>
+<a class="text-slate-900 dark:text-white border-b-2 border-slate-900 dark:border-white pb-1 font-semibold tracking-tight" href="#">Community</a>
+</div>
+<button class="primary-gradient text-white px-6 py-2.5 rounded-lg font-semibold scale-95 active:scale-90 transition-transform shadow-lg">
+                Book Now
+            </button>
+</div>
+<div class="bg-slate-200/50 dark:bg-slate-800/50 h-[1px] w-full"></div>
+</nav>
+<main class="flex-grow pt-24 pb-20 max-w-7xl mx-auto px-8 w-full">
+<!-- Section 1: Community Events -->
+<section class="mb-20">
+<div class="flex items-center justify-between mb-8">
+<div>
+<h2 class="text-3xl font-black text-primary tracking-tight">Community Events</h2>
+<p class="text-on-surface-variant mt-1">Social gatherings, networking nights, and tournaments.</p>
+</div>
+<a class="text-secondary font-semibold flex items-center gap-1 hover:underline" href="#">
+                    Event Calendar <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Featured Event Hero -->
+<div class="relative w-full h-[400px] rounded-2xl overflow-hidden primary-gradient group mb-8">
+<div class="absolute inset-0 opacity-40 mix-blend-overlay">
+<img alt="Networking Night" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMeYXEv8tJnYskvjq5RWbDB2k5JvQZQ08JuQFQznPs6MjVguHFOgZloabDlmYWZpVmOySkirjKhcmB2nMDUcGWRiqOnu11Q-ZLezh6p8GF2Upu8rdvU8XF3qoxnuTEhsKPdOQwp2mRUhqd4jVPFtusj07blVuwHTepcXjLeFRVD-aAg9iN4wkZt47bSlP_7y1l0yLJ3qNqeNb6zwi5LxQi4cuGmzZ3-gkufZKU-5VrZG9egIcI9PuYT9v1ON3xY9v3pNWA9KWJ2P2B"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/30 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-12 w-full md:w-2/3">
+<div class="inline-flex items-center gap-2 bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                        Featured Event
+                    </div>
+<h1 class="text-4xl md:text-5xl font-black text-white leading-tight mb-4 tracking-tight">
+                        Financial District <br/>Networking Night
+                    </h1>
+<p class="text-slate-300 text-lg mb-6 max-w-xl">
+                        Connect with fellow tech leaders and IT professionals living at Kgrand. An evening of insights, cocktails, and community building.
+                    </p>
+<div class="flex flex-wrap items-center gap-6">
+<div class="flex items-center gap-2 text-white">
+<span class="material-symbols-outlined text-secondary-fixed">calendar_today</span>
+<span class="font-medium">Friday, Oct 24</span>
+</div>
+<div class="flex items-center gap-2 text-white">
+<span class="material-symbols-outlined text-secondary-fixed">location_on</span>
+<span class="font-medium">Sky Lounge, Gachibowli</span>
+</div>
+<button class="bg-surface-container-lowest text-primary px-8 py-3 rounded-lg font-bold hover:bg-surface-container-high transition-colors">
+                            RSVP Now
+                        </button>
+</div>
+</div>
+</div>
+<!-- More Events Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/10 hover:shadow-lg transition-all">
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-bold uppercase tracking-widest text-secondary">Tournament</span>
+<span class="text-xs font-medium text-on-surface-variant">Nov 02</span>
+</div>
+<h3 class="text-lg font-bold text-primary mb-2">Inter-PG Chess Championship</h3>
+<p class="text-sm text-on-surface-variant mb-4">Test your strategy skills against the sharpest minds across Kgrand properties.</p>
+<button class="text-primary font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">Join Waitlist <span class="material-symbols-outlined text-sm">chevron_right</span></button>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/10 hover:shadow-lg transition-all">
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-bold uppercase tracking-widest text-secondary">Gathering</span>
+<span class="text-xs font-medium text-on-surface-variant">Oct 30</span>
+</div>
+<h3 class="text-lg font-bold text-primary mb-2">Weekend Rooftop BBQ</h3>
+<p class="text-sm text-on-surface-variant mb-4">Casual grills and music at our Hitech City branch. Perfect for meeting your neighbors.</p>
+<button class="text-primary font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">RSVP <span class="material-symbols-outlined text-sm">chevron_right</span></button>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/10 hover:shadow-lg transition-all">
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-bold uppercase tracking-widest text-secondary">Wellness</span>
+<span class="text-xs font-medium text-on-surface-variant">Every Sun</span>
+</div>
+<h3 class="text-lg font-bold text-primary mb-2">Morning Yoga Sessions</h3>
+<p class="text-sm text-on-surface-variant mb-4">Start your Sundays right with guided mindfulness and yoga at the Gachibowli garden.</p>
+<button class="text-primary font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">Sign Up <span class="material-symbols-outlined text-sm">chevron_right</span></button>
+</div>
+</div>
+</section>
+<!-- Section 2: Latest News -->
+<section>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-8">
+<div class="flex items-center justify-between mb-8">
+<div>
+<h2 class="text-3xl font-black text-primary tracking-tight">Latest News</h2>
+<p class="text-on-surface-variant mt-1">Property updates, maintenance, and milestones.</p>
+</div>
+</div>
+<div class="space-y-6">
+<!-- News Item 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant/20 p-8 rounded-2xl flex gap-6 items-start">
+<div class="bg-secondary-container p-4 rounded-xl text-secondary shrink-0">
+<span class="material-symbols-outlined text-2xl">apartment</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-3">
+<div>
+<span class="text-[10px] font-black uppercase tracking-widest text-secondary-fixed-dim bg-secondary/10 px-2 py-1 rounded mb-2 inline-block">Brand Milestone</span>
+<h3 class="text-xl font-bold text-primary">Kgrand Residences Expands to Kondapur</h3>
+</div>
+<span class="text-xs font-medium text-on-surface-variant">2 Hours Ago</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+                                    We are thrilled to announce the opening of our newest luxury PG in Kondapur. Featuring state-of-the-art coworking spaces and an exclusive fitness center, this marks our 10th property in Hyderabad.
+                                </p>
+<div class="mt-4 flex gap-4">
+<button class="text-sm font-bold text-secondary hover:underline">Read Full Press Release</button>
+</div>
+</div>
+</div>
+<!-- News Item 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant/20 p-8 rounded-2xl flex gap-6 items-start">
+<div class="bg-primary-container p-4 rounded-xl text-white shrink-0">
+<span class="material-symbols-outlined text-2xl">build</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-3">
+<div>
+<span class="text-[10px] font-black uppercase tracking-widest text-primary-container bg-primary/10 px-2 py-1 rounded mb-2 inline-block">Maintenance Notice</span>
+<h3 class="text-xl font-bold text-primary">Bi-Annual Safety Audit &amp; Maintenance</h3>
+</div>
+<span class="text-xs font-medium text-on-surface-variant">Yesterday</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+                                    To ensure the highest safety standards, routine fire safety audits and elevator maintenance are scheduled for all Gachibowli wings this week. Please check the portal for specific floor timings.
+                                </p>
+</div>
+</div>
+<!-- News Item 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant/20 p-8 rounded-2xl flex gap-6 items-start">
+<div class="bg-tertiary-fixed p-4 rounded-xl text-on-tertiary-fixed shrink-0">
+<span class="material-symbols-outlined text-2xl">restaurant</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-3">
+<div>
+<span class="text-[10px] font-black uppercase tracking-widest text-on-tertiary-fixed-variant bg-tertiary/10 px-2 py-1 rounded mb-2 inline-block">Update</span>
+<h3 class="text-xl font-bold text-primary">Menu Refresh: Seasonal Breakfast Specials</h3>
+</div>
+<span class="text-xs font-medium text-on-surface-variant">2 Days Ago</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+                                    Our kitchen team has introduced authentic Pesarattu and artisanal filter coffee to the weekday menu across all Hitech City residences.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Sidebar Content -->
+<aside class="lg:col-span-4 space-y-8">
+<div class="bg-primary-container p-8 rounded-2xl text-white">
+<h3 class="text-xl font-bold mb-4">A Note from our Founder</h3>
+<p class="text-on-primary-container text-sm leading-relaxed mb-6 italic">
+                            "Our mission was simple: build a sanctuary for the builders of tomorrow. Every amenity at Kgrand is curated to fuel your ambition while giving you the warmth of a home."
+                        </p>
+<div>
+<p class="font-bold">Vikram Reddy</p>
+<p class="text-xs text-on-primary-container">Founder, Kgrand Residences</p>
+</div>
+</div>
+<div class="bg-surface p-8 rounded-2xl border border-outline-variant/20">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-secondary">explore</span>
+<h2 class="text-xl font-bold text-primary tracking-tight">Local Guide</h2>
+</div>
+<div class="space-y-4">
+<div class="group cursor-pointer">
+<div class="aspect-video w-full rounded-lg overflow-hidden mb-3">
+<img alt="HITEC City" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwMGV40ilhCQ2lD1DG5yF0VVk7YuFDfqOFtLTI-Q7N6WAyOFtr8wseQLW0GvrHTL42tud_Zw9RJxzvxz6cV_SqKi2od0euMXYZ9NH_UJTYFvChkCMDgyr0XCc8eJ5HyFCLBqDnN2v1rNZvqqTEYHmbwTOpRTnuwIxbcQ_hvcTkZcNGlPicEs9t9WHNdd-p7NkStNKDu3NztFtWPnGegZQVBzEjFdrJgl6l_7H4UW3-U8wCQtW2priBjpG9rRamJJs9DiemOKaWxRbV"/>
+</div>
+<h4 class="font-bold text-primary group-hover:text-secondary transition-colors text-sm">HITEC City Tech Hub</h4>
+</div>
+<div class="flex gap-4 items-center p-3 rounded-xl hover:bg-surface-container-low transition-colors cursor-pointer border border-transparent hover:border-outline-variant/20">
+<div class="bg-tertiary-fixed w-10 h-10 rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-tertiary-fixed text-sm">coffee</span>
+</div>
+<div>
+<p class="text-sm font-bold text-primary">Third Wave Coffee</p>
+<p class="text-[11px] text-on-surface-variant">Top co-working spot</p>
+</div>
+</div>
+<div class="flex gap-4 items-center p-3 rounded-xl hover:bg-surface-container-low transition-colors cursor-pointer border border-transparent hover:border-outline-variant/20">
+<div class="bg-secondary-fixed w-10 h-10 rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-sm">fitness_center</span>
+</div>
+<div>
+<p class="text-sm font-bold text-primary">Cult.fit DLF</p>
+<p class="text-[11px] text-on-surface-variant">Member Discounts</p>
+</div>
+</div>
+</div>
+<button class="w-full mt-6 py-3 border-2 border-secondary/20 text-secondary rounded-xl font-bold hover:bg-secondary hover:text-white transition-all text-sm">
+                            Digital Neighborhood Map
+                        </button>
+</div>
+</aside>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 mt-auto bg-slate-100 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-bold text-slate-900 dark:text-slate-50 text-xl tracking-tighter">Kgrand Residences.</span>
+<p class="text-sm text-slate-600 dark:text-slate-400">© 2024 Kgrand Residences. All rights reserved.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Contact Us</a>
+<a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Careers</a>
+</div>
+</div>
+</footer>
+</body></html>

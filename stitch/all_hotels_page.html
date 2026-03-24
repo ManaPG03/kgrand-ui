@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-container": "#1b263b",
+              "inverse-on-surface": "#f0f1f2",
+              "error": "#ba1a1a",
+              "surface-dim": "#d9dadb",
+              "on-background": "#191c1d",
+              "background": "#f8f9fa",
+              "surface-container-highest": "#e1e3e4",
+              "on-surface-variant": "#45474d",
+              "on-tertiary-fixed-variant": "#5d4201",
+              "surface-variant": "#e1e3e4",
+              "surface-tint": "#545e76",
+              "surface": "#f8f9fa",
+              "on-secondary-fixed": "#001d36",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed-dim": "#e9c176",
+              "tertiary-fixed": "#ffdea5",
+              "secondary-container": "#c2dcff",
+              "on-surface": "#191c1d",
+              "surface-container": "#edeeef",
+              "tertiary-container": "#342300",
+              "on-primary-container": "#828da7",
+              "on-secondary-fixed-variant": "#2f4865",
+              "on-primary": "#ffffff",
+              "on-tertiary-container": "#ab8844",
+              "on-error": "#ffffff",
+              "primary-fixed-dim": "#bbc6e2",
+              "inverse-surface": "#2e3132",
+              "secondary": "#47607e",
+              "on-tertiary-fixed": "#261900",
+              "surface-container-low": "#f3f4f5",
+              "on-tertiary": "#ffffff",
+              "outline-variant": "#c5c6cd",
+              "surface-container-high": "#e7e8e9",
+              "outline": "#75777d",
+              "error-container": "#ffdad6",
+              "surface-bright": "#f8f9fa",
+              "on-error-container": "#93000a",
+              "tertiary": "#190f00",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#afc9ea",
+              "primary-fixed": "#d7e2ff",
+              "primary": "#051125",
+              "on-primary-fixed": "#101b30",
+              "on-secondary-container": "#48617e",
+              "inverse-primary": "#bbc6e2",
+              "on-primary-fixed-variant": "#3c475d",
+              "secondary-fixed": "#d1e4ff"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .btn-gradient {
+            background: linear-gradient(135deg, #051125 0%, #1b263b 100%);
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0_4px_20px_rgba(5,17,37,0.04)]">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<img alt="Kgrand Logo" class="h-8 w-auto" data-alt="Kgrand minimalist corporate logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKvQYSR0Doj_Y2_l9qBu4b4tCez1qUPP9kvz4Ycg1bLuOe4N3UZGE6HX1Q6JcunfajnF_5OTZ0MktyOI6mw1Q-gvdDT_m90ebpQZhyOIwA7sx43G8POmnAYxiB2Qu_BLGD6jPtEMMCsYtqWX4vb_DLdKFdtr4UMVKgw3tfCHX0vNMXZ8V7HtkKI3p6FkMEGHocohpHgSvPYnqXOTf5E2pynNdVErg7pgmVBuMhGz16dEp9Dw20Hj_sP2V7p0anqPwluAwCIS-WhbRt"/>
+<span class="text-2xl font-bold text-[#051125] dark:text-slate-100 tracking-tighter">Kgrand</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Inter'] font-semibold tracking-tight text-[#47607e] dark:text-slate-400 hover:text-[#051125] transition-colors" href="#">PGs</a>
+<a class="font-['Inter'] font-semibold tracking-tight text-[#051125] border-b-2 border-[#051125] pb-1" href="#">Hotels</a>
+<a class="font-['Inter'] font-semibold tracking-tight text-[#47607e] dark:text-slate-400 hover:text-[#051125] transition-colors" href="#">Community</a>
+</div>
+<button class="btn-gradient text-on-primary px-6 py-2.5 rounded-lg font-semibold text-sm hover:opacity-90 active:scale-95 transition-all">
+                Book Now
+            </button>
+</div>
+<div class="bg-slate-100 dark:bg-slate-800 h-[1px] w-full absolute bottom-0 opacity-50"></div>
+</nav>
+<main class="pt-32 pb-24 px-6 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<header class="mb-16 max-w-3xl">
+<h1 class="text-5xl md:text-6xl font-extrabold text-primary tracking-tight mb-6">
+                Our Premium Hotel Collection in Hyderabad
+            </h1>
+<p class="text-xl text-secondary leading-relaxed">
+                A curated blend of luxury and convenience tailored for tech professionals and modern travelers. Discover spaces that inspire productivity and rest.
+            </p>
+</header>
+<!-- Hotels Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+<!-- Hotel Card 1 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(5,17,37,0.04)] hover:shadow-[0_10px_40px_rgba(5,17,37,0.06)] transition-all duration-500 flex flex-col">
+<div class="relative h-72 overflow-hidden">
+<img alt="Kgrand Residency Madhapur" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Luxury hotel facade with modern lighting at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA22oVfy0VM8f3LLvze0ZJicYdqxVEdghOvaoU30RY8bHMdmUGWoeVOw3GOLy_DvNbMceyLmWtpJAYvwSX73xJKPXB6CH_TUh_BR9aVKt6KvGnCmg5wQR9Wk6byYGXsZNMXpr94nVppNHJC4LDQSsObwcz6u1Jubf3Ri8T7Ndk5exmNkXObiXNjFCbePKbY6fV6iIiHowjx3AP7S5MKF5i1KiifMT1f409fDPHpe74HGa_CJDwoz8LcfDDGcd4zfMdDR-KHFodw_3TA"/>
+<div class="absolute top-4 left-4">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase">Premium</span>
+</div>
+</div>
+<div class="p-8 flex-grow">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-2xl font-bold text-primary mb-1">Kgrand Residency Madhapur</h3>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span class="text-sm font-medium">Madhapur, Hyderabad</span>
+</div>
+</div>
+<div class="text-right">
+<p class="text-xs text-on-surface-variant font-medium uppercase tracking-widest mb-1">Starting at</p>
+<p class="text-xl font-bold text-primary">₹4,500<span class="text-sm font-normal text-secondary">/night</span></p>
+</div>
+</div>
+<!-- Amenities -->
+<div class="flex flex-wrap gap-6 my-8 py-6 border-y border-outline-variant/15">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="wifi">wifi</span>
+<span class="text-xs font-semibold text-on-surface-variant">WiFi</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="restaurant">restaurant</span>
+<span class="text-xs font-semibold text-on-surface-variant">In-room dining</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="fitness_center">fitness_center</span>
+<span class="text-xs font-semibold text-on-surface-variant">24/7 Gym</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="ac_unit">ac_unit</span>
+<span class="text-xs font-semibold text-on-surface-variant">AC</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="bg-surface-container-high text-primary font-bold py-4 rounded-lg hover:bg-surface-container-highest transition-colors flex items-center justify-center gap-2">
+                            View Details
+                        </button>
+<button class="btn-gradient text-on-primary font-bold py-4 rounded-lg hover:opacity-95 transition-opacity flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">chat</span>
+                            WhatsApp Enquiry
+                        </button>
+</div>
+</div>
+</div>
+<!-- Hotel Card 2 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(5,17,37,0.04)] hover:shadow-[0_10px_40px_rgba(5,17,37,0.06)] transition-all duration-500 flex flex-col">
+<div class="relative h-72 overflow-hidden">
+<img alt="Kgrand Suites" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Elegant hotel suite interior with king bed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMCiisWAaHUFLTmowusYHxQHRo-86h6p-ONztob-3NESwROWE3sV1RXGrK0g6H5sKN6CmAQDKliG8i7hwAsvl3zmnlQ5-2aP-zRJEVgXTXINprFKzLth99LbwZ7k1ZEME13IgNHULN2hcycJ-EsmlTzxn11Ov4zgG_32kjB-V4wK3gxvnmjrkKYmS1cazIfTQuAew5mMQt1oUuNcC36TPw0FLwpYKBzuM4mSX_lGNd_x164vLgYvdnfG3ttqoykWqONNXi2YBUbGb5"/>
+<div class="absolute top-4 left-4">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase">Luxury</span>
+</div>
+</div>
+<div class="p-8 flex-grow">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-2xl font-bold text-primary mb-1">Kgrand Suites</h3>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span class="text-sm font-medium">Gachibowli, Hyderabad</span>
+</div>
+</div>
+<div class="text-right">
+<p class="text-xs text-on-surface-variant font-medium uppercase tracking-widest mb-1">Starting at</p>
+<p class="text-xl font-bold text-primary">₹5,200<span class="text-sm font-normal text-secondary">/night</span></p>
+</div>
+</div>
+<!-- Amenities -->
+<div class="flex flex-wrap gap-6 my-8 py-6 border-y border-outline-variant/15">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="wifi">wifi</span>
+<span class="text-xs font-semibold text-on-surface-variant">WiFi</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="restaurant">restaurant</span>
+<span class="text-xs font-semibold text-on-surface-variant">In-room dining</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="fitness_center">fitness_center</span>
+<span class="text-xs font-semibold text-on-surface-variant">24/7 Gym</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="ac_unit">ac_unit</span>
+<span class="text-xs font-semibold text-on-surface-variant">AC</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="bg-surface-container-high text-primary font-bold py-4 rounded-lg hover:bg-surface-container-highest transition-colors flex items-center justify-center gap-2">
+                            View Details
+                        </button>
+<button class="btn-gradient text-on-primary font-bold py-4 rounded-lg hover:opacity-95 transition-opacity flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">chat</span>
+                            WhatsApp Enquiry
+                        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Featured Section (Bento Style) -->
+<div class="mt-24 grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-2 bg-primary-container p-12 rounded-xl text-white relative overflow-hidden">
+<div class="relative z-10 max-w-lg">
+<h4 class="text-3xl font-bold mb-4">Extended Stay Excellence</h4>
+<p class="text-on-primary-container text-lg leading-relaxed mb-8">
+                        Our hotels are designed for more than just a night. Experience corporate comfort with dedicated workspaces and premium hospitality.
+                    </p>
+<div class="flex gap-4">
+<div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg">
+<span class="material-symbols-outlined text-tertiary-fixed">verified</span>
+<span class="text-sm font-medium">Safe &amp; Secure</span>
+</div>
+<div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg">
+<span class="material-symbols-outlined text-tertiary-fixed">hub</span>
+<span class="text-sm font-medium">Community Driven</span>
+</div>
+</div>
+</div>
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-secondary/20 rounded-full blur-3xl"></div>
+</div>
+<div class="bg-surface-container-high p-8 rounded-xl flex flex-col justify-center text-center border border-outline-variant/10">
+<span class="material-symbols-outlined text-5xl text-primary mb-4" style="font-variation-settings: 'FILL' 1;">star</span>
+<h5 class="text-xl font-bold text-primary mb-2">Member Rewards</h5>
+<p class="text-on-surface-variant text-sm mb-6">Earn points on every booking across our 15+ properties in Hyderabad.</p>
+<a class="text-primary font-bold hover:underline underline-offset-4" href="#">Learn More →</a>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-[#f8f9fa] dark:bg-slate-950">
+<div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-start gap-8">
+<div class="space-y-4">
+<div class="text-xl font-bold text-[#051125] dark:text-white">Kgrand Residences</div>
+<p class="text-[#47607e] dark:text-slate-400 max-w-xs font-['Inter'] text-sm leading-relaxed">
+                    Elevating the living experience for modern professionals in India's tech hubs.
+                </p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+<div class="flex flex-col gap-3">
+<span class="text-[#051125] dark:text-white font-bold text-sm">Explore</span>
+<a class="text-[#47607e] dark:text-slate-400 text-sm hover:text-[#051125] dark:hover:text-white underline-offset-4 hover:underline" href="#">Locations</a>
+<a class="text-[#47607e] dark:text-slate-400 text-sm hover:text-[#051125] dark:hover:text-white underline-offset-4 hover:underline" href="#">FAQ</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-[#051125] dark:text-white font-bold text-sm">Company</span>
+<a class="text-[#47607e] dark:text-slate-400 text-sm hover:text-[#051125] dark:hover:text-white underline-offset-4 hover:underline" href="#">Privacy Policy</a>
+<a class="text-[#47607e] dark:text-slate-400 text-sm hover:text-[#051125] dark:hover:text-white underline-offset-4 hover:underline" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-[#051125] dark:text-white font-bold text-sm">Support</span>
+<a class="text-[#47607e] dark:text-slate-400 text-sm hover:text-[#051125] dark:hover:text-white underline-offset-4 hover:underline" href="#">Contact Us</a>
+</div>
+</div>
+</div>
+<div class="bg-[#e1e3e4] dark:bg-slate-800 h-[1px] w-full"></div>
+<div class="max-w-7xl mx-auto px-6 py-6 text-center md:text-left">
+<p class="text-[#47607e] dark:text-slate-400 font-['Inter'] text-sm leading-relaxed">© 2024 Kgrand Residences. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

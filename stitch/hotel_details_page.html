@@ -1,0 +1,381 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Kgrand Residency Madhapur | Haven</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed": "#d1e4ff",
+              "on-surface-variant": "#45474d",
+              "tertiary-fixed": "#ffdea5",
+              "surface-variant": "#e1e3e4",
+              "on-primary-fixed": "#101b30",
+              "surface-container-high": "#e7e8e9",
+              "on-tertiary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#ab8844",
+              "on-primary-container": "#828da7",
+              "on-secondary-fixed-variant": "#2f4865",
+              "on-secondary-fixed": "#001d36",
+              "on-error-container": "#93000a",
+              "error": "#ba1a1a",
+              "surface-tint": "#545e76",
+              "tertiary-fixed-dim": "#e9c176",
+              "inverse-on-surface": "#f0f1f2",
+              "secondary-container": "#c2dcff",
+              "surface-bright": "#f8f9fa",
+              "on-surface": "#191c1d",
+              "primary": "#051125",
+              "outline": "#75777d",
+              "surface-container": "#edeeef",
+              "on-primary-fixed-variant": "#3c475d",
+              "inverse-primary": "#bbc6e2",
+              "surface-container-highest": "#e1e3e4",
+              "outline-variant": "#c5c6cd",
+              "primary-fixed-dim": "#bbc6e2",
+              "primary-fixed": "#d7e2ff",
+              "on-tertiary-fixed-variant": "#5d4201",
+              "surface-container-low": "#f3f4f5",
+              "error-container": "#ffdad6",
+              "secondary-fixed-dim": "#afc9ea",
+              "on-secondary": "#ffffff",
+              "surface-dim": "#d9dadb",
+              "on-tertiary-fixed": "#261900",
+              "tertiary": "#190f00",
+              "on-background": "#191c1d",
+              "background": "#f8f9fa",
+              "surface": "#f8f9fa",
+              "inverse-surface": "#2e3132",
+              "primary-container": "#1b263b",
+              "on-secondary-container": "#48617e",
+              "secondary": "#47607e",
+              "on-primary": "#ffffff",
+              "tertiary-container": "#342300",
+              "on-error": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-glass {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(5, 17, 37, 0.85) 0%, rgba(5, 17, 37, 0.4) 100%);
+        }
+        .cta-gradient {
+            background: linear-gradient(135deg, #051125 0%, #1b263b 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-[#051125]/80 backdrop-blur-md shadow-[0_4px_20px_rgba(5,17,37,0.04)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<img alt="Haven Logo" class="h-8 w-auto" data-alt="Minimalist elegant logo for a premium hospitality brand named Haven using deep navy colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK5INqPvRbk-humR2qIRdaWS7VcezdzX9jiyDFTT9sQKQ9WusI0cjBJULVc6c6DWovgZKf1AY7dvHz_0XBCCjiV8-iGR4nX9Cbi5kvMx2p-7xWJztcYGoWsoKBa5a2LvCvaNAXHCancPinzavyfmDVpmA_zpWxYtnP4ZKUWR3oSjCXJd2zQNuN1MZI-2cDAFW6-4KQ2Ofb_Jv98_zvTeruH0_inkK_OiRj7qRfGW8RjCOcZ3hTTKFVGzElRc6aqdLW6ZxVzwqtk7Ux" style="">
+<span class="text-2xl font-black text-[#051125] dark:text-white tracking-tighter" style="">KGrand</span>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#47607e] dark:text-slate-400 hover:text-[#051125] dark:hover:text-white transition-colors font-['Inter'] font-semibold tracking-tight" href="#" style="">Our PGs</a>
+<a class="text-[#051125] dark:text-white border-b-2 border-[#051125] dark:border-white pb-1 font-['Inter'] font-semibold tracking-tight" href="#" style="">Our Hotels</a>
+<a class="text-[#47607e] dark:text-slate-400 hover:text-[#051125] dark:hover:text-white transition-colors font-['Inter'] font-semibold tracking-tight" href="#" style="">Community</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-semibold hover:opacity-90 active:scale-95 duration-200 ease-in-out" style="">
+                Book Now
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[870px] w-full overflow-hidden">
+<div class="absolute inset-0">
+<img class="w-full h-full object-cover" data-alt="Luxury hotel room interior with warm ambient lighting, plush bedding, executive desk, and large windows overlooking a city skyline at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv6b4wCa5WuAvZYV97bZIl_1b9ztz39BcVvQWgWdzjYjZvlOCu4fnLGSyfZqWvSeIsXCmM7eqV7dwZFsekjzpvCwIKLefMHho_LB3Orgb7n4RZLNhAZI_IOgYuBHDVRVk_6NJ57lYqZsqZArtRnwDlh2bm6MIbBGA1Xzj9P5QM1cGrwESRc-l_WyypBt3sIYKfwCn86dll0t1QG57FGt4kjSg-yXjZ_r1KmnSQVpctZx1_N3A8rDrDvzesFRXeCgGDZXtmRNiQj5gk" style="">
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative h-full max-w-7xl mx-auto px-8 flex flex-col justify-center">
+<div class="max-w-3xl space-y-6">
+<span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold text-xs uppercase tracking-widest" style="">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                        Premium Business Stay
+                    </span>
+<h1 class="text-white text-6xl md:text-7xl font-extrabold tracking-tighter leading-tight font-headline" style="">
+                        Productive Stays for <br><span class="text-secondary-fixed" style="">High-Achievers</span>
+</h1>
+<p class="text-slate-200 text-xl md:text-2xl font-light leading-relaxed max-w-2xl" style="">
+                        Designed for the IT professionals of HITEC City. Quiet Zones and seamless tech integration in the heart of Madhapur.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="cta-gradient text-on-primary px-8 py-4 rounded-xl font-bold flex items-center gap-3 shadow-xl active:scale-95 transition-transform" style="">
+<span class="material-symbols-outlined" style="">call</span>
+                            Call to Book
+                        </button>
+<button class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl font-bold flex items-center gap-3 hover:bg-white/20 active:scale-95 transition-transform" style="">
+<span class="material-symbols-outlined" style="">chat</span>
+                            WhatsApp Enquiry
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats & Features Bar -->
+<section class="relative z-10 -mt-16 px-8 max-w-7xl mx-auto">
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-[0_10px_40px_rgba(5,17,37,0.06)] grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="">wifi</span>
+</div>
+<div>
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest" style="">Connectivity</p>
+<p class="text-primary font-bold" style="">Fiber-Grade WiFi</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="">fitness_center</span>
+</div>
+<div>
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest" style="">Wellness</p>
+<p class="text-primary font-bold" style="">24/7 Elite Gym</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="">concierge</span>
+</div>
+<div>
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest" style="">Service</p>
+<p class="text-primary font-bold" style="">Dedicated Concierge</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="">location_on</span>
+</div>
+<div>
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest" style="">Location</p>
+<p class="text-primary font-bold" style="">Madhapur Center</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Room Selection -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div class="max-w-xl">
+<h2 class="text-4xl font-black text-primary tracking-tighter mb-4" style="">Executive Living Spaces</h2>
+<p class="text-secondary text-lg" style="">Curated environments designed to facilitate focus and rest. Experience the perfect balance of luxury and utility.</p>
+</div>
+<div class="h-1 w-24 bg-primary hidden md:block mb-4"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+<!-- King Suite -->
+<div class="group bg-surface-container-low rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500">
+<div class="relative h-80 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Spacious king executive hotel suite with premium walnut furniture, modern lighting, and high-end work desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvrRYkc735wXlpNDB0jamA4S9Y2hVk0f_k28J8lqWPJ02Er6qdoiGPfyD7X6mhhkEGhaJFBfkeyhPzqPeSLikinMHD4xfgTZwsF9Siop_M0qtNnc0NNMcap0dbJ810IVDinnl6JTeYUpCoO9iww4HBUIu2_NcQf89lBgfdsYbm4FpxGsNNxw-5GpHWH0_G-Gj46LjP_OFAtgmPhnptX1f9lfFgmzQ-VUfote3_mL_qpZly6nRZK0NCeXmNTT9MGjg7yYkY5jdWy7UZ" style="">
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-widest" style="">Most Popular</span>
+</div>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h3 class="text-2xl font-bold text-primary mb-1" style="">King Executive Suite</h3>
+<p class="text-secondary flex items-center gap-2" style="">
+<span class="material-symbols-outlined text-sm" style="">square_foot</span> 450 sq ft
+                                </p>
+</div>
+<div class="text-right">
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest" style="">Starting at</p>
+<p class="text-3xl font-black text-primary tracking-tighter" style="">₹5,499<span class="text-sm font-normal text-secondary" style="">/night</span></p>
+</div>
+</div>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-3 text-on-surface-variant" style="">
+<span class="material-symbols-outlined text-primary text-xl" style="">check_circle</span>
+                                Ergonomic workstation with Herman Miller chair
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant" style="">
+<span class="material-symbols-outlined text-primary text-xl" style="">check_circle</span>
+                                Soundproofed 'Deep Work' windows
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant" style="">
+<span class="material-symbols-outlined text-primary text-xl" style="">check_circle</span>
+                                Smart lighting &amp; climate automation
+                            </li>
+</ul>
+<button class="w-full py-4 rounded-xl border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all active:scale-95" style="">
+                            Select King Suite
+                        </button>
+</div>
+</div>
+<!-- Twin Executive -->
+<div class="group bg-surface-container-low rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500">
+<div class="relative h-80 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern twin executive hotel room with two beds, clean lines, and integrated charging ports on headboards" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0WNRI6LYh_xSBCXrUdU81uTbRZHv-RJ5hWL7lAuf0gUkZOy1TAMBkoF03d-SURe3T7i3pHHR4X-mLpeJtBHwodw8caEmJmSTUVoAvntQA-eGOTIwHoUgbly2smcP_x17Vad0wHwspCJDmkBBKNQkm3-ydB8FWlhujp4zDCOwz1H_vao6y8xAulo1C-MFWwNTHvyZzqvoEW3YZMUqlfAppgKtytGg1MaWXep3BIsb8R7mNqdkE83iEYbdWo3aeBw8NCqqPcyXnY-Mp" style="">
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h3 class="text-2xl font-bold text-primary mb-1" style="">Twin Executive</h3>
+<p class="text-secondary flex items-center gap-2" style="">
+<span class="material-symbols-outlined text-sm" style="">square_foot</span> 380 sq ft
+                                </p>
+</div>
+<div class="text-right">
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest" style="">Starting at</p>
+<p class="text-3xl font-black text-primary tracking-tighter" style="">₹4,299<span class="text-sm font-normal text-secondary" style="">/night</span></p>
+</div>
+</div>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-3 text-on-surface-variant" style="">
+<span class="material-symbols-outlined text-primary text-xl" style="">check_circle</span>
+                                Dedicated twin beds with memory foam
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant" style="">
+<span class="material-symbols-outlined text-primary text-xl" style="">check_circle</span>
+                                High-speed LAN and Wi-Fi points
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant" style="">
+<span class="material-symbols-outlined text-primary text-xl" style="">check_circle</span>
+                                Breakfast included at Cloud Kitchen
+                            </li>
+</ul>
+<button class="w-full py-4 rounded-xl border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all active:scale-95" style="">
+                            Select Twin Room
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Local Guide / Map Area -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-5">
+<h2 class="text-4xl font-black text-primary tracking-tighter mb-6" style="">Strategic Proximity</h2>
+<p class="text-secondary text-lg mb-10 leading-relaxed" style="">
+                            Located at the epicenter of Hyderabad's tech corridor. Save hours on commute and focus on what truly matters.
+                        </p>
+<div class="space-y-8">
+<div class="flex items-center justify-between p-6 bg-surface-container-lowest rounded-xl shadow-sm border-l-4 border-primary">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" style="">corporate_fare</span>
+<div>
+<p class="font-bold text-primary" style="">HITEC City Hub</p>
+<p class="text-sm text-secondary" style="">Major Tech Parks</p>
+</div>
+</div>
+<span class="font-bold text-primary" style="">1.2 km</span>
+</div>
+<div class="flex items-center justify-between p-6 bg-surface-container-lowest rounded-xl shadow-sm border-l-4 border-secondary">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" style="">shopping_bag</span>
+<div>
+<p class="font-bold text-primary" style="">Inorbit Mall</p>
+<p class="text-sm text-secondary" style="">Premium Shopping &amp; Dining</p>
+</div>
+</div>
+<span class="font-bold text-primary" style="">2.5 km</span>
+</div>
+<div class="flex items-center justify-between p-6 bg-surface-container-lowest rounded-xl shadow-sm border-l-4 border-outline">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" style="">restaurant</span>
+<div>
+<p class="font-bold text-primary" style="">Cyber Hub Food Court</p>
+<p class="text-sm text-secondary" style="">Global Cuisines</p>
+</div>
+</div>
+<span class="font-bold text-primary" style="">0.8 km</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 h-[500px] rounded-3xl overflow-hidden shadow-2xl relative">
+<img class="w-full h-full object-cover" data-alt="Stylized modern map of Madhapur district in Hyderabad showing key tech landmarks in deep navy and slate tones" data-location="Madhapur Hyderabad" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCid6P7tJRnQugUBChzodFnt4XAcD8ylLlbNHLNCBUVmxVIgJ_BUhNBcM7k2uNVs4NIqTJUHoJ582xWaoNrqOObQfGggUSPE5XOJ5Xc4aqg4dfhMAK0dRULrAOgkYmaHLv1vjSmkUQglU5IEx-jaQ6fRvW3VIDK70gzV73r-Dadt8Id1Snp8zGO-1Aeu3_u1KrhqaUoulAsmCKnBfPIH9KU_S9o2GwjKZUCG6rOpzZaVoJxU_DYpGHABDfGtsWHs2Yc8ulaM-mcdpe2" style="">
+<div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+<div class="absolute bottom-6 right-6 bg-white p-4 rounded-xl shadow-lg">
+<div class="flex items-center gap-3">
+<div class="w-3 h-3 rounded-full bg-error animate-pulse"></div>
+<p class="text-sm font-bold text-primary" style="">Kgrand Residency Madhapur</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-white py-20 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
+<div class="space-y-6">
+<div class="flex items-center gap-3">
+<img alt="Haven White Logo" class="h-8 brightness-0 invert" data-alt="White version of Haven logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN1cIYM7Mrrh56poa7Aq2c94aZ05MstjbLSS7xLq7EMal_hp0grxAxEKn-1fFMiLJAnae5_WBmHoiPNJefaOZg7g_RuXQ8UGxGbPQpt1hY49kH70cSUSQY1NxQXJxCmOrXruimaHTeZNEXJl3c8kjsUQSUBiT4Jq_rrJA0tczYXuMVo98Ed_ZzpLRQKLJWbeudUlt2n9873TPACQ69rsAoNWbCnyL8S1qNVPt_-RC_HK0lgDqlzLSkjky_7AdqnX05UsbBdXBE9ea3" style="">
+<span class="text-2xl font-black tracking-tighter" style="">KGrand</span>
+</div>
+<p class="text-slate-400 max-w-xs" style="">Redefining the standard of premium co-living and business stays for the modern professional.</p>
+</div>
+<div class="space-y-6">
+<h4 class="text-lg font-bold" style="">Quick Links</h4>
+<ul class="space-y-4 text-slate-400">
+<li class="" style=""><a class="hover:text-white transition-colors" href="#" style="">Our Properties</a></li>
+<li class="" style=""><a class="hover:text-white transition-colors" href="#" style="">Corporate Booking</a></li>
+<li class="" style=""><a class="hover:text-white transition-colors" href="#" style="">Careers</a></li>
+<li class="" style=""><a class="hover:text-white transition-colors" href="#" style="">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="text-lg font-bold" style="">Contact Us</h4>
+<ul class="space-y-4 text-slate-400">
+<li class="flex items-center gap-3" style="">
+<span class="material-symbols-outlined text-sm" style="">mail</span>
+                            hello@kgrand.stays
+                        </li>
+<li class="flex items-center gap-3" style="">
+<span class="material-symbols-outlined text-sm" style="">phone</span>
+                            +91 98765 43210
+                        </li>
+<li class="flex items-center gap-3" style="">
+<span class="material-symbols-outlined text-sm" style="">location_on</span>
+                            Madhapur, HITEC City, Hyderabad
+                        </li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-20 pt-10 border-t border-white/10 text-center text-slate-500 text-sm" style="">
+                © 2024 Haven Hospitality. All Rights Reserved.
+            </div>
+</footer>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 md:hidden bg-white/90 dark:bg-[#051125]/90 backdrop-blur-xl shadow-[0_-10px_40px_rgba(5,17,37,0.06)] rounded-t-2xl z-50">
+<a class="flex flex-col items-center justify-center text-[#47607e] dark:text-slate-400 px-6 py-2 hover:opacity-80 transition-opacity active:scale-90 duration-200" href="#" style="">
+<span class="material-symbols-outlined" data-icon="home_work" style="">home_work</span>
+<span class="text-[10px] font-medium font-['Inter'] uppercase tracking-widest mt-1" style="">PGs</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#051125] dark:bg-slate-100 text-white dark:text-[#051125] rounded-xl px-6 py-2 transition-all active:scale-90 duration-200" href="#" style="">
+<span class="material-symbols-outlined" data-icon="hotel" style="">hotel</span>
+<span class="text-[10px] font-medium font-['Inter'] uppercase tracking-widest mt-1" style="">Hotels</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#47607e] dark:text-slate-400 px-6 py-2 hover:opacity-80 transition-opacity active:scale-90 duration-200" href="#" style="">
+<span class="material-symbols-outlined" data-icon="group" style="">group</span>
+<span class="text-[10px] font-medium font-['Inter'] uppercase tracking-widest mt-1" style="">Community</span>
+</a>
+</nav>
+</body></html>

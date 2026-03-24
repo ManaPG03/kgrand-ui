@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>All PG Residences | Kgrand</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed": "#d7e2ff",
+              "on-secondary-fixed": "#001d36",
+              "tertiary-fixed": "#ffdea5",
+              "primary-container": "#1b263b",
+              "on-surface": "#191c1d",
+              "on-surface-variant": "#45474d",
+              "on-secondary": "#ffffff",
+              "surface-dim": "#d9dadb",
+              "primary-fixed-dim": "#bbc6e2",
+              "surface-variant": "#e1e3e4",
+              "outline-variant": "#c5c6cd",
+              "on-secondary-fixed-variant": "#2f4865",
+              "inverse-on-surface": "#f0f1f2",
+              "on-tertiary-fixed": "#261900",
+              "surface-bright": "#f8f9fa",
+              "secondary-fixed": "#d1e4ff",
+              "on-primary-fixed-variant": "#3c475d",
+              "outline": "#75777d",
+              "surface-tint": "#545e76",
+              "secondary-fixed-dim": "#afc9ea",
+              "inverse-primary": "#bbc6e2",
+              "primary": "#051125",
+              "secondary": "#47607e",
+              "on-tertiary-fixed-variant": "#5d4201",
+              "on-primary-fixed": "#101b30",
+              "background": "#f8f9fa",
+              "tertiary-container": "#342300",
+              "secondary-container": "#c2dcff",
+              "tertiary": "#190f00",
+              "on-error-container": "#93000a",
+              "surface-container-high": "#e7e8e9",
+              "on-primary-container": "#828da7",
+              "on-background": "#191c1d",
+              "on-tertiary": "#ffffff",
+              "error": "#ba1a1a",
+              "inverse-surface": "#2e3132",
+              "on-primary": "#ffffff",
+              "error-container": "#ffdad6",
+              "surface-container-highest": "#e1e3e4",
+              "surface-container": "#edeeef",
+              "on-secondary-container": "#48617e",
+              "tertiary-fixed-dim": "#e9c176",
+              "surface-container-low": "#f3f4f5",
+              "surface": "#f8f9fa",
+              "on-tertiary-container": "#ab8844",
+              "on-error": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .bg-primary-gradient {
+        background: linear-gradient(135deg, #051125 0%, #1b263b 100%);
+      }
+      .ambient-shadow {
+        box-shadow: 0 4px 20px rgba(5, 17, 37, 0.04), 0 10px 40px rgba(5, 17, 37, 0.06);
+      }
+    </style>
+</head>
+<body class="bg-background font-body text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0_4px_20px_rgba(5,11,37,0.04)]">
+<div class="flex justify-between items-center px-10 py-4 max-w-screen-2xl mx-auto font-['Inter'] antialiased text-sm font-medium tracking-tight">
+<div class="text-2xl font-black tracking-tighter text-[#051125] dark:text-white">Kgrand</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#051125] dark:hover:text-white transition-colors" href="#">Discover Homes</a>
+<a class="text-[#051125] dark:text-white border-b-2 border-[#47607e] pb-1 font-semibold" href="#">Hyderabad</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#051125] dark:hover:text-white transition-colors" href="#">Amenities</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#051125] dark:hover:text-white transition-colors" href="#">Community</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#051125] dark:hover:text-white transition-colors" href="#">Contact Us</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative hidden lg:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-sm" data-icon="search">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-low border-none rounded-lg text-xs focus:ring-2 focus:ring-secondary w-64" placeholder="Search locations..." type="text"/>
+</div>
+<button class="bg-primary-gradient text-on-primary px-6 py-2.5 rounded-lg text-sm font-semibold hover:opacity-90 active:scale-[0.99] transition-all">
+                    List Your Property
+                </button>
+</div>
+</div>
+<div class="bg-[#f3f4f5] dark:bg-slate-900 h-[1px] w-full absolute bottom-0"></div>
+</nav>
+<main class="pt-32 pb-24 px-10 max-w-screen-2xl mx-auto">
+<!-- Header Section -->
+<header class="mb-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="max-w-2xl">
+<span class="inline-flex items-center gap-2 px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed text-xs font-bold rounded-full mb-4">
+<span class="material-symbols-outlined text-sm" data-icon="home_pin">home_pin</span>
+                        HYDERABAD
+                    </span>
+<h1 class="text-5xl font-extrabold tracking-tight text-primary mb-6">Explore Premium Residences</h1>
+<p class="text-lg text-on-surface-variant leading-relaxed">Discover curated living spaces designed for modern professionals and students. High-density comfort in the heart of the city.</p>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-low p-2 rounded-xl">
+<button class="px-4 py-2 bg-surface-container-lowest text-primary shadow-sm rounded-lg text-sm font-semibold transition-all">Grid View</button>
+<button class="px-4 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg text-sm font-medium transition-all">Map View</button>
+</div>
+</div>
+</header>
+<!-- Bento Grid for Properties -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Property 1: Kgrand Luxury Co-Live -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden ambient-shadow transition-transform hover:-translate-y-1">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Modern luxury bedroom with large windows and sleek furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPPKQXTYGu9dm2TvFLUn4vhkqMpybJsdqjI2KWUlvklT9tvn9T-2-VTJpyQlI-IKrxQvjaDQelmwrjRJCC8GT-zxF7uE3CJhMczF-oRSll8eWopuT9OX2Zj6M1BavjUnaKwNe5-h_xMbTnHpfsf9jd5YNmvybn9YtiqzRUOCCDJ3HRy3Syy1OJ5zOi13AQsLHllAHdsaASb_rWRbmmrqXhzbIFHZ3kXasFstJUrPxQvQe8_ODsL53qXnWatI0MS5wdZ4a-CO1DaXOo"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-on-primary text-[10px] font-bold tracking-widest px-3 py-1.5 rounded-md uppercase">Luxury Tier</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="mb-6">
+<h3 class="text-2xl font-bold text-primary mb-2">Kgrand Luxury Co-Live</h3>
+<p class="text-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+                            Hitech City, Hyderabad
+                        </p>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="bg-surface-container-lowest p-4 rounded-lg">
+<span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider block mb-1">Room Size</span>
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined text-lg" data-icon="square_foot">square_foot</span>
+                                280 sq ft
+                            </div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg">
+<span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider block mb-1">Sharing</span>
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined text-lg" data-icon="group">group</span>
+                                Single / Twin
+                            </div>
+</div>
+</div>
+<div class="mt-auto">
+<div class="flex items-baseline gap-1 mb-6">
+<span class="text-sm text-on-surface-variant">Starts from</span>
+<span class="text-2xl font-black text-primary">₹24,500</span>
+<span class="text-xs text-on-surface-variant">/ month</span>
+</div>
+<div class="flex flex-col gap-3">
+<button class="w-full bg-primary-gradient text-on-primary py-3.5 rounded-lg font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-all">
+<span class="material-symbols-outlined text-xl" data-icon="call">call</span>
+                                Call Support
+                            </button>
+<button class="w-full bg-surface-container-high text-primary py-3.5 rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+                                WhatsApp Enquiry
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Property 2: K Grand Elite Colive PG -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden ambient-shadow transition-transform hover:-translate-y-1">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Elite shared living space with minimalist interior design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa-k-_v1oKnbOf1ljzKeutqXcvG8ZxLbtzmRcKtNcOGFuFUXSLzCj_qsD0JMf8q8ZBXLtBHf63yxTZB920x0EeXdQRrFB1_h9qhQOrmlQaxChog4dNnDe91qG2fjkWSomzbIc1Z_BjH75zENYfnmZoYhuUwfpOx2269QJtf6MmmMcZsuaCsmt-NfJZeqd4sFEZm18BhNVdgWzzDaUhgTi9cz8ixD2CNMZGPC7jKKJ6-C27wzsqNpRoiB4afUKMBiYOfp37j3XugTsU"/>
+<div class="absolute top-4 left-4">
+<span class="bg-secondary text-white text-[10px] font-bold tracking-widest px-3 py-1.5 rounded-md uppercase">Elite Choice</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="mb-6">
+<h3 class="text-2xl font-bold text-primary mb-2">K Grand Elite Colive PG</h3>
+<p class="text-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+                            Gachibowli, Hyderabad
+                        </p>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="bg-surface-container-lowest p-4 rounded-lg">
+<span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider block mb-1">Room Size</span>
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined text-lg" data-icon="square_foot">square_foot</span>
+                                220 sq ft
+                            </div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg">
+<span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider block mb-1">Sharing</span>
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined text-lg" data-icon="group">group</span>
+                                Twin Sharing
+                            </div>
+</div>
+</div>
+<div class="mt-auto">
+<div class="flex items-baseline gap-1 mb-6">
+<span class="text-sm text-on-surface-variant">Starts from</span>
+<span class="text-2xl font-black text-primary">₹18,000</span>
+<span class="text-xs text-on-surface-variant">/ month</span>
+</div>
+<div class="flex flex-col gap-3">
+<button class="w-full bg-primary-gradient text-on-primary py-3.5 rounded-lg font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-all">
+<span class="material-symbols-outlined text-xl" data-icon="call">call</span>
+                                Call Support
+                            </button>
+<button class="w-full bg-surface-container-high text-primary py-3.5 rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+                                WhatsApp Enquiry
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Property 3: K Grand Swarna Colive PG -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden ambient-shadow transition-transform hover:-translate-y-1">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Bright airy PG room with comfortable bedding and workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWrYuDqLhbIfzru9j-WDey0WPOiKsjgMulj4IgjztJfy5iiRZ__6Nsz32AE7eFA8Qr0Vs_B7PTaUiBIWZBQALeUTL3C7s9vMZnjou74UdwPOe8HK7-LdhCPR1AxYXCNHjsBXhd9Dnf-wD5kMT_uc4fBus67EDYeARDpWhwA8aIaZ0uJs2F5G1gZPFqweZJbZkWvKyQP-gPfgf2CTzyqw62e-gQ59GeiPQl3eOtQS-tywXgq7T6ZPGVpzL8Ic2rl4bGTaEE4puUNgcn"/>
+<div class="absolute top-4 left-4">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-bold tracking-widest px-3 py-1.5 rounded-md uppercase">High Demand</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="mb-6">
+<h3 class="text-2xl font-bold text-primary mb-2">K Grand Swarna Colive PG</h3>
+<p class="text-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+                            Kondapur, Hyderabad
+                        </p>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="bg-surface-container-lowest p-4 rounded-lg">
+<span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider block mb-1">Room Size</span>
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined text-lg" data-icon="square_foot">square_foot</span>
+                                195 sq ft
+                            </div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg">
+<span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider block mb-1">Sharing</span>
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined text-lg" data-icon="group">group</span>
+                                Triple / Twin
+                            </div>
+</div>
+</div>
+<div class="mt-auto">
+<div class="flex items-baseline gap-1 mb-6">
+<span class="text-sm text-on-surface-variant">Starts from</span>
+<span class="text-2xl font-black text-primary">₹14,500</span>
+<span class="text-xs text-on-surface-variant">/ month</span>
+</div>
+<div class="flex flex-col gap-3">
+<button class="w-full bg-primary-gradient text-on-primary py-3.5 rounded-lg font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-all">
+<span class="material-symbols-outlined text-xl" data-icon="call">call</span>
+                                Call Support
+                            </button>
+<button class="w-full bg-surface-container-high text-primary py-3.5 rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+                                WhatsApp Enquiry
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Amenities Section (Bento Extension) -->
+<section class="mt-32">
+<h2 class="text-3xl font-extrabold text-primary mb-12">The Kgrand Experience</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="md:col-span-2 bg-surface-container p-10 rounded-2xl flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl text-secondary mb-6" data-icon="wifi">wifi</span>
+<h4 class="text-xl font-bold mb-4">Ultra-Fast Connectivity</h4>
+<p class="text-on-surface-variant">Dedicated high-speed leased lines ensuring you're always connected for work or play.</p>
+</div>
+</div>
+<div class="bg-primary text-on-primary p-10 rounded-2xl">
+<span class="material-symbols-outlined text-4xl mb-6 text-tertiary-fixed" data-icon="security">security</span>
+<h4 class="text-xl font-bold mb-4">24/7 Security</h4>
+<p class="text-slate-400">Biometric access and round-the-clock surveillance for your peace of mind.</p>
+</div>
+<div class="bg-surface-container-high p-10 rounded-2xl">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6" data-icon="restaurant">restaurant</span>
+<h4 class="text-xl font-bold mb-4">Home-style Food</h4>
+<p class="text-on-surface-variant">Nutritious, hygienically prepared meals served 3 times a day.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#051125] dark:bg-black w-full pt-16 pb-8 border-t border-slate-800">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 px-10 max-w-screen-2xl mx-auto font-['Inter'] leading-relaxed text-slate-300">
+<div>
+<span class="text-xl font-bold text-white mb-4 block">Kgrand Residences</span>
+<p class="text-sm text-slate-400 mb-6">Redefining co-living in Hyderabad with premium spaces and community focus.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-xl hover:text-[#ffdea5] cursor-pointer" data-icon="facebook">social_leaderboard</span>
+<span class="material-symbols-outlined text-xl hover:text-[#ffdea5] cursor-pointer" data-icon="instagram">retweet</span>
+<span class="material-symbols-outlined text-xl hover:text-[#ffdea5] cursor-pointer" data-icon="youtube_activity">youtube_activity</span>
+</div>
+</div>
+<div>
+<span class="font-bold text-white mb-4 block">Quick Links</span>
+<ul class="space-y-3">
+<li><a class="text-slate-400 hover:text-[#ffdea5] transition-transform duration-200 hover:translate-x-1 inline-block" href="#">About Us</a></li>
+<li><a class="text-slate-400 hover:text-[#ffdea5] transition-transform duration-200 hover:translate-x-1 inline-block" href="#">Careers</a></li>
+<li><a class="text-slate-400 hover:text-[#ffdea5] transition-transform duration-200 hover:translate-x-1 inline-block" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-400 hover:text-[#ffdea5] transition-transform duration-200 hover:translate-x-1 inline-block" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<span class="font-bold text-white mb-4 block">Our Offerings</span>
+<ul class="space-y-3">
+<li><a class="text-slate-400 hover:text-[#ffdea5] transition-transform duration-200 hover:translate-x-1 inline-block" href="#">Hyderabad PG Locations</a></li>
+<li><a class="text-slate-400 hover:text-[#ffdea5] transition-transform duration-200 hover:translate-x-1 inline-block" href="#">Premium Suites</a></li>
+<li><a class="text-slate-400 hover:text-[#ffdea5] transition-transform duration-200 hover:translate-x-1 inline-block" href="#">Student Housing</a></li>
+<li><a class="text-slate-400 hover:text-[#ffdea5] transition-transform duration-200 hover:translate-x-1 inline-block" href="#">FAQ</a></li>
+</ul>
+</div>
+<div>
+<span class="font-bold text-white mb-4 block">Get in Touch</span>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed" data-icon="mail">mail</span>
+<span class="text-sm">hello@kgrandresidences.com</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed" data-icon="phone_iphone">phone_iphone</span>
+<span class="text-sm">+91 98765 43210</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto px-10 mt-16 pt-8 border-t border-slate-800 text-center">
+<p class="text-slate-500 text-sm">© 2024 Kgrand Residences. Designed for Discovery.</p>
+</div>
+</footer>
+</body></html>

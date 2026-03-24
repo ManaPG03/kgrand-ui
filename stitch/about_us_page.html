@@ -1,0 +1,301 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed-variant": "#3c475d",
+              "surface-container": "#edeeef",
+              "surface-container-low": "#f3f4f5",
+              "on-error-container": "#93000a",
+              "on-tertiary-fixed-variant": "#5d4201",
+              "on-primary-fixed": "#101b30",
+              "surface-dim": "#d9dadb",
+              "surface": "#f8f9fa",
+              "outline-variant": "#c5c6cd",
+              "on-tertiary": "#ffffff",
+              "surface-container-high": "#e7e8e9",
+              "surface-bright": "#f8f9fa",
+              "tertiary-fixed-dim": "#e9c176",
+              "secondary-container": "#c2dcff",
+              "on-primary-container": "#828da7",
+              "on-surface": "#191c1d",
+              "on-secondary-fixed": "#001d36",
+              "on-surface-variant": "#45474d",
+              "surface-variant": "#e1e3e4",
+              "surface-container-highest": "#e1e3e4",
+              "background": "#f8f9fa",
+              "primary": "#051125",
+              "on-secondary": "#ffffff",
+              "tertiary-container": "#342300",
+              "primary-fixed-dim": "#bbc6e2",
+              "primary-container": "#1b263b",
+              "on-secondary-container": "#48617e",
+              "on-primary": "#ffffff",
+              "on-secondary-fixed-variant": "#2f4865",
+              "tertiary-fixed": "#ffdea5",
+              "on-tertiary-fixed": "#261900",
+              "on-background": "#191c1d",
+              "secondary": "#47607e",
+              "inverse-surface": "#2e3132",
+              "inverse-primary": "#bbc6e2",
+              "inverse-on-surface": "#f0f1f2",
+              "secondary-fixed-dim": "#afc9ea",
+              "surface-tint": "#545e76",
+              "on-tertiary-container": "#ab8844",
+              "primary-fixed": "#d7e2ff",
+              "tertiary": "#190f00",
+              "secondary-fixed": "#d1e4ff",
+              "outline": "#75777d",
+              "error-container": "#ffdad6",
+              "error": "#ba1a1a"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "1rem", "xl": "1.25rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-primary-gradient {
+            background: linear-gradient(135deg, #051125 0%, #1b263b 100%);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-[0_4px_20px_rgba(5,17,37,0.04)]">
+<div class="max-w-7xl mx-auto px-8 flex justify-between items-center h-20">
+<div class="text-2xl font-bold tracking-tighter text-slate-950 dark:text-white font-headline" style="">KGrand</div>
+<div class="hidden md:flex items-center space-x-8 font-['Inter'] font-medium tracking-tight">
+<a class="text-slate-500 dark:text-slate-400 pb-1 hover:text-slate-950 dark:hover:text-white transition-colors duration-200" href="#" style="">Our Spaces</a>
+<a class="text-slate-500 dark:text-slate-400 pb-1 hover:text-slate-950 dark:hover:text-white transition-colors duration-200" href="#" style="">Experience</a>
+<a class="text-slate-950 dark:text-white border-b-2 border-slate-950 dark:border-white pb-1" href="#" style="">About Us</a>
+<a class="text-slate-500 dark:text-slate-400 pb-1 hover:text-slate-950 dark:hover:text-white transition-colors duration-200" href="#" style="">Locations</a>
+</div>
+<button class="bg-primary-gradient text-on-primary px-6 py-2.5 rounded-lg font-medium active:scale-95 transition-transform" style="">
+                Book Now
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[614px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale-[20%]" data-alt="Warm sunlight filtering through a high-end modern apartment window in Hyderabad, illuminating soft navy textiles and wooden accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOsci3IcWU-6NCeCmFCaVnezvTPFXpAofhBCnxYlvYMM0tU500_ESdz72ecGFW0sO2V8T_F_VhFsnQ0_Fph7fXn8aU8t2nrh91dvfEiSCug4QPXJXe1GdPs2xWuNTv1FHTFsxAcGW1WsyDQZYSgzk48eB8vwmrPcU_97LwETEvoe0Jb7-CYhpii91h4bgY2g6D80vLWPpZazq9d5ZrK6E8LZhbQNIfO42jl-VgH4nYX9ursMvdAECgz4p5MDB_4KjY5vEtT9v8uQKF" style="">
+<div class="absolute inset-0 bg-primary/40 mix-blend-multiply"></div>
+</div>
+<div class="max-w-7xl mx-auto px-8 w-full relative z-10">
+<div class="max-w-2xl">
+<span class="inline-block px-4 py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-xs font-bold uppercase tracking-widest mb-6" style="">Established 2018</span>
+<h1 class="text-display-lg text-5xl md:text-7xl font-extrabold text-white tracking-tighter leading-none mb-8" style="">
+                        The Kgrand <br>Journey
+                    </h1>
+<p class="text-xl text-slate-200 font-light leading-relaxed max-w-xl" style="">
+                        Redefining communal living for the tech elite in Hyderabad through a relentless commitment to professional governance and curated comfort.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Narrative Section: The Origin -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-5">
+<h2 class="text-4xl font-bold text-primary tracking-tight mb-8" style="">How it started.</h2>
+<div class="space-y-6 text-on-surface-variant leading-loose">
+<p class="" style="">Founded amidst the rapid expansion of Hyderabad’s HITEC City and Gachibowli, Haven (Kgrand) began as a direct response to the fragmented and often unreliable PG landscape.</p>
+<p class="" style="">Our founders, former tech professionals themselves, experienced firsthand the disconnect between the high-pressure demands of the industry and the lack of high-quality, managed living spaces that offered more than just a bed.</p>
+<p class="" style="">They envisioned a "Haven"—a place where quality, professional governance, and human connection weren't luxury add-ons, but the standard for every resident.</p>
+</div>
+</div>
+<div class="md:col-span-7">
+<div class="aspect-video rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A sprawling panoramic view of Hyderabad's modern tech skyline at dusk, with soft warm lights in the windows of glass buildings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXLgmHAqVnNfk2a8M1A0lIR_aQwR1IBG6yoJhE87vAF4epXTncJSfp6IdTy_LeJnM6I-Uj7yV7-c42t73GBJ4IHnbrfxHzGLOYNkxbIQw9cqQoN9n655U3qQAN1hhMew-FJF91IONdPGDtfLGod-6WmrLRd91xoYiEBzGwT936us0xKSLaIzO_g4QZQoukrqmCVl-LQ_XsvPOMfhQGrVPR8XTxXMIHJwGFBFbqD7PEPoG-jSgJtgHM1HssLuDmZBv1-v0L_czjUzcD" style="">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Values: Bento Grid -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16 text-center max-w-2xl mx-auto">
+<h2 class="text-3xl font-bold text-primary mb-4" style="">The Pillars of KGrand</h2>
+<p class="text-on-surface-variant" style="">Our commitment to excellence is built upon three non-negotiable foundations that guide every decision we make.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Quality -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-[0_4px_20px_rgba(5,17,37,0.04)] group hover:translate-y-[-4px] transition-all">
+<div class="w-14 h-14 rounded-lg bg-secondary/10 flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-secondary text-3xl" style="">verified</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4" style="">Uncompromising Quality</h3>
+<p class="text-on-surface-variant leading-relaxed" style="">From 400-thread-count linens to professional-grade kitchen facilities, every detail is vetted for longevity and aesthetic appeal.</p>
+</div>
+<!-- Safety -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-[0_4px_20px_rgba(5,17,37,0.04)] group hover:translate-y-[-4px] transition-all">
+<div class="w-14 h-14 rounded-lg bg-secondary/10 flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-secondary text-3xl" style="">shield_person</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4" style="">Total Safety</h3>
+<p class="text-on-surface-variant leading-relaxed" style="">Biometric access, 24/7 onsite security, and rigorous professional governance ensure peace of mind for every resident.</p>
+</div>
+<!-- Community -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-[0_4px_20px_rgba(5,17,37,0.04)] group hover:translate-y-[-4px] transition-all">
+<div class="w-14 h-14 rounded-lg bg-secondary/10 flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-secondary text-3xl" style="">groups</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4" style="">Vibrant Community</h3>
+<p class="text-on-surface-variant leading-relaxed" style="">We don't just provide rooms; we curate environments where networking and lifelong friendships happen naturally.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Founder Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1">
+<div class="relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 bg-tertiary-fixed rounded-xl -z-10"></div>
+<img class="rounded-xl shadow-xl w-full" data-alt="Two professional Indian founders in smart casual attire, standing in a brightly lit modern office environment, looking confident and approachable" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8E1VfzbdqRYSTCOl139JcyXquCiEJTh6PP3e8eVLmn-wDCaAi_F_bEcvyohQ0iT6UdYtITutdlcNIewnBPrOu51TZNtCJxAwAGaAsglSTO2INaybBV_By3N-5iPotLeISjAoHM7iiLn3HhbSmZBuKwZi__D91ONgcRsDjco0jF_27DScQqsFslT0GujHfWlGr2PsDYJGxLyfHJh5C1h9uNF8HgEhw6p3SKiPkGN9HIVlkFf-YH-SiOU8y-zpas2imt86pOXt4yEu9" style="">
+</div>
+</div>
+<div class="order-1 md:order-2">
+<span class="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block" style="">Our Founders</span>
+<h2 class="text-4xl font-bold text-primary mb-6 tracking-tight" style="">Committed to Governance.</h2>
+<p class="text-on-surface-variant text-lg leading-loose mb-8 italic" style="">
+                            "Living in a high-growth city like Hyderabad shouldn't mean sacrificing your quality of life. We built Kgrand to bridge the gap between corporate professionalism and the warmth of a home."
+                        </p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" style="">gavel</span>
+<div>
+<h4 class="font-bold text-primary" style="">Ethical Governance</h4>
+<p class="text-sm text-on-surface-variant" style="">Transparent leasing, fair deposits, and 24-hour grievance redressal systems.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" style="">handshake</span>
+<div>
+<h4 class="font-bold text-primary" style="">Resident-First Approach</h4>
+<p class="text-sm text-on-surface-variant" style="">A community governed by mutual respect and shared excellence.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- High Density Info / Stats -->
+<section class="py-24 bg-primary text-white">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+<div>
+<div class="text-5xl font-extrabold mb-2 tracking-tighter" style="">1,200+</div>
+<div class="text-on-primary-container uppercase tracking-widest text-xs font-bold" style="">Residents Served</div>
+</div>
+<div>
+<div class="text-5xl font-extrabold mb-2 tracking-tighter" style="">12</div>
+<div class="text-on-primary-container uppercase tracking-widest text-xs font-bold" style="">Premium Locations</div>
+</div>
+<div>
+<div class="text-5xl font-extrabold mb-2 tracking-tighter" style="">98%</div>
+<div class="text-on-primary-container uppercase tracking-widest text-xs font-bold" style="">Renewal Rate</div>
+</div>
+<div>
+<div class="text-5xl font-extrabold mb-2 tracking-tighter" style="">4.9/5</div>
+<div class="text-on-primary-container uppercase tracking-widest text-xs font-bold" style="">Community Rating</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Center: Lived-in Imagery -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="text-3xl font-bold text-primary mb-4" style="">A Glimpse of KGrand Life</h2>
+<p class="text-on-surface-variant leading-relaxed" style="">Step into our curated spaces designed for focus, relaxation, and connection. Each center reflects our commitment to 'The Curated Haven'.</p>
+</div>
+<button class="text-secondary font-bold flex items-center gap-2 hover:gap-4 transition-all group" style="">
+                        View All Locations <span class="material-symbols-outlined" style="">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<div class="md:col-span-8 group cursor-pointer overflow-hidden rounded-xl">
+<img class="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A sun-drenched communal lounge with deep navy velvet sofas, indoor plants, and floor-to-ceiling windows overlooking Gachibowli" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJZjkUtkyzwvPOAjEgnx3YZKcpC4p0w0AbcBsF08cheWQNQprFA7XiMCxU8H3bhachz8fS2AmZzpy0qXZ6VYJsk3sNM8Met7LRcgOA0LDmVd4ZyR9hsI2SvOupRY6gkAQL2av9k2ut_O2o8Pmfvh1i3JeHcMkY13hw5IEkmFqZw0G3ccqU04ocJ4EbLbu0s5dKSjOPNevB043SExOh5yzprrl2IsJ1ibeTfSYN9XqjUadWE4oY-ecoZR-RJR3HW8sAtqxOUGE79ggV" style="">
+<div class="absolute bottom-8 left-8 text-white">
+<h4 class="text-2xl font-bold" style="">The Lounge at Gachibowli</h4>
+<p class="text-slate-200" style="">Our signature community hub.</p>
+</div>
+</div>
+<div class="md:col-span-4 flex flex-col gap-8">
+<div class="h-1/2 rounded-xl overflow-hidden group cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A close-up of a premium resident kitchen with slate-gray cabinetry, high-end stainless steel appliances, and a basket of fresh organic produce" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5dz9d24AIW05leM-9AfXUg_xhlJXT3iu428yOSJ9VL_qfTS9xCSVNQBIyeGldHe9ilmbXO2rOE0Fwn6T4DR0EmCvjMXFzuscDAXdfosGAYg12WQoqGsxgau4NZpO6rcPjgyD9mw79G3sQvPj0R2Fc4ZWamDbRdcIeBP3kpeYSJk9yWkp9mmJyjdivBGOumyrGLDGnwzrMqpSQ_xi2IgBcONS0J00x64MFhYGUIzVebbEbQpJ7b4TLLIUd1VGPsGnWGNMgJKyNqQ6w" style="">
+</div>
+<div class="h-1/2 rounded-xl overflow-hidden group cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Warm, intimate lighting in a resident library corner with leather armchairs and walls filled with curated books" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgnoSndCqLMEK3Jro2lVDT50ckXqEGY4mbpDOJRl91-lVX5AVBsFS5sqeZL4EuE2iILI5TnYJKNCth8yfkIY-ZKTPlCMvtTCe2wbOvLtuTAnODwHDh659p67CP-iOdCOQ2xpnkb6sbFrqevL58gRO-cezWdjwwjkHukhAwz5-IL63bTT66uIRBksHzEDLM9k_osVbhgEafG6XRwsAiVB84xQaMznujD0oYmsSnETiCqpzOFfljOEMrZU0EPuYGz8IIgCekkqKi9KqF" style="">
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-900 w-full pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12 font-['Inter'] text-sm leading-relaxed">
+<div class="space-y-6">
+<div class="text-xl font-bold text-slate-950 dark:text-white" style="">KGrand</div>
+<p class="text-slate-600 dark:text-slate-400 max-w-xs" style="">Elevating communal living in Hyderabad's premier tech corridors. Professional governance meets the warmth of home.</p>
+</div>
+<div class="flex flex-col space-y-4">
+<h5 class="text-slate-950 dark:text-white font-semibold" style="">Quick Links</h5>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 underline underline-offset-4 transition-all" href="#" style="">Our Spaces</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 underline underline-offset-4 transition-all" href="#" style="">About Us</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 underline underline-offset-4 transition-all" href="#" style="">Careers</a>
+</div>
+<div class="flex flex-col space-y-4">
+<h5 class="text-slate-950 dark:text-white font-semibold" style="">Centers</h5>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 underline underline-offset-4 transition-all" href="#" style="">HITEC City</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 underline underline-offset-4 transition-all" href="#" style="">Gachibowli</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 underline underline-offset-4 transition-all" href="#" style="">Financial District</a>
+</div>
+<div class="flex flex-col space-y-4">
+<h5 class="text-slate-950 dark:text-white font-semibold" style="">Support</h5>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 underline underline-offset-4 transition-all" href="#" style="">Contact Us</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 underline underline-offset-4 transition-all" href="#" style="">Privacy Policy</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 underline underline-offset-4 transition-all" href="#" style="">Terms of Service</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="text-slate-600 dark:text-slate-400 text-xs" style="">© 2024 Haven Living Spaces. All rights rights reserved.</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors" style="">public</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors" style="">hub</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors" style="">mail</span>
+</div>
+</div>
+</footer>
+</body></html>
