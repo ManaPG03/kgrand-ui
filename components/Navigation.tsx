@@ -22,7 +22,7 @@ export default function Navigation() {
 
   return (
     <header className="fixed top-0 inset-x-0 z-50 glass-nav shadow-ambient">
-      <nav className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
+      <nav className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4 h-16 flex items-center justify-between gap-4">
         {/* Logo */}
         <Link href="/" className="flex-shrink-0 flex items-center">
           <Image
@@ -67,14 +67,25 @@ export default function Navigation() {
         {/* Hamburger - mobile */}
         <button
           onClick={() => setMenuOpen((v) => !v)}
-          className="lg:hidden relative z-50 flex items-center justify-center w-11 h-11 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors cursor-pointer touch-manipulation"
+          onTouchEnd={(e) => { e.preventDefault(); setMenuOpen((v) => !v); }}
+          className="lg:hidden relative z-50 flex items-center justify-center w-12 h-12 -mr-2 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors cursor-pointer"
+          style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
           type="button"
         >
-          <span className="material-symbols-outlined text-2xl pointer-events-none">
-            {menuOpen ? 'close' : 'menu'}
-          </span>
+          {menuOpen ? (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="pointer-events-none">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          ) : (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="pointer-events-none">
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          )}
         </button>
       </nav>
 

@@ -20,7 +20,7 @@ export default function HotelsPage() {
           />
           <div className="absolute inset-0 hero-gradient" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 w-full pt-16">
+        <div className="relative z-10 max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4 w-full pt-16">
           <div className="max-w-2xl">
             <span className="inline-block px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold text-xs tracking-wider uppercase mb-4">
               Kgrand Hotel Collection
@@ -39,7 +39,7 @@ export default function HotelsPage() {
 
       {/* ── Elite Guest Program ─────────────────────────────────────────── */}
       <section className="py-12 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="text-center mb-8">
             <span className="inline-block px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-bold text-xs tracking-wider uppercase mb-3">
               Exclusive Programme
@@ -119,7 +119,7 @@ export default function HotelsPage() {
 
       {/* ── Hotel Cards Grid ─────────────────────────────────────────────── */}
       <section className="py-12 bg-surface">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-extrabold text-primary tracking-tight mb-2">
               Choose Your Property
@@ -217,7 +217,7 @@ export default function HotelsPage() {
 
       {/* ── CTA Banner ───────────────────────────────────────────────────── */}
       <section className="py-12 bg-primary">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <span className="material-symbols-outlined text-tertiary-fixed text-3xl mb-4 block">
               hotel

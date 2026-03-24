@@ -116,6 +116,15 @@ body {
   background: linear-gradient(135deg, #051125 0%, #1b263b 100%);
 }
 
+/* Responsive container: 1280px default, 80% on ultrawide (≥1920px) */
+.container-main {
+  max-width: 80rem; /* 1280px = max-w-7xl */
+  margin-inline: auto;
+  @media (min-width: 1920px) {
+    max-width: 80%;
+  }
+}
+
 /* Solid nav */
 .glass-nav {
   background: #ffffff;

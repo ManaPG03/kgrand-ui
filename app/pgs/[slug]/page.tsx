@@ -49,7 +49,7 @@ export default async function PGDetailPage({
         <div className="absolute inset-0 hero-gradient" />
 
         <div className="absolute bottom-0 left-0 right-0 pb-4 md:pb-6">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
             <span
               className={`inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider mb-2 ${
                 pg.badgeVariant === 'primary'
@@ -93,7 +93,7 @@ export default async function PGDetailPage({
       {/* ── Gallery ──────────────────────────────────────────────────────── */}
       {pg.galleryImages.length > 0 && (
         <section className="py-8 bg-surface-container-low">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
             <GalleryLightbox images={pg.galleryImages} />
           </div>
         </section>
@@ -101,7 +101,7 @@ export default async function PGDetailPage({
 
       {/* ── Main Content + Sidebar ────────────────────────────────────────── */}
       <section className="py-12 bg-surface">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="lg:grid lg:grid-cols-3 lg:gap-8">
 
             {/* ── Main Content ──────────────────────────────────────────── */}

@@ -15,7 +15,7 @@ const company = [
 export default function Footer() {
   return (
     <footer className="bg-primary text-on-primary-container">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 lg:pb-8">
+      <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 lg:pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">

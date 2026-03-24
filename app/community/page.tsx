@@ -70,7 +70,7 @@ export default function CommunityPage() {
           />
           <div className="absolute inset-0 hero-gradient" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 w-full pt-16">
+        <div className="relative z-10 max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4 w-full pt-16">
           <div className="max-w-2xl">
             <span className="inline-block px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold text-xs tracking-wider uppercase mb-4">
               Events &amp; News
@@ -89,7 +89,7 @@ export default function CommunityPage() {
 
       {/* ── Events Section ───────────────────────────────────────────────── */}
       <section className="py-12 bg-surface">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-end mb-8 gap-4">
             <div>
               <h2 className="text-3xl font-extrabold text-primary mb-2 tracking-tight">
@@ -151,7 +151,7 @@ export default function CommunityPage() {
 
       {/* ── Kgrand News ──────────────────────────────────────────────────── */}
       <section className="py-12 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="mb-8">
             <h2 className="text-3xl font-extrabold text-primary mb-2 tracking-tight">
               Kgrand News
@@ -191,7 +191,7 @@ export default function CommunityPage() {
 
       {/* ── Founder Note ─────────────────────────────────────────────────── */}
       <section className="py-12 bg-primary">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
               <span className="material-symbols-outlined text-white text-2xl">format_quote</span>

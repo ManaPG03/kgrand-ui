@@ -8,7 +8,7 @@ export default function EnquirePage() {
     <>
       {/* ── Reach Us CTA ──────────────────────────────────────────────── */}
       <section className="pt-32 pb-16 bg-surface">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-3 tracking-tight">
               Let&apos;s Get You Started

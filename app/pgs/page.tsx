@@ -33,7 +33,7 @@ export default function PGsPage() {
           />
           <div className="absolute inset-0 hero-gradient" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 w-full pt-16">
+        <div className="relative z-10 max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4 w-full pt-16">
           <div className="max-w-2xl">
             <span className="inline-block px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold text-xs tracking-wider uppercase mb-4">
               Co-Living in Hyderabad
@@ -51,7 +51,7 @@ export default function PGsPage() {
 
       {/* ── Stats Bar ───────────────────────────────────────────────────────── */}
       <div className="bg-primary-container">
-        <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { value: '3', label: 'Properties' },
@@ -72,7 +72,7 @@ export default function PGsPage() {
 
       {/* ── PG Cards Grid ───────────────────────────────────────────────────── */}
       <section className="py-12 bg-surface">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <h2 className="text-3xl font-extrabold text-primary mb-8 tracking-tight">
             Choose Your Residence
           </h2>
@@ -174,7 +174,7 @@ export default function PGsPage() {
 
       {/* ── Amenities Showcase ──────────────────────────────────────────────── */}
       <section className="py-12 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-extrabold text-primary mb-2 tracking-tight">
               Every Residence Includes
@@ -206,7 +206,7 @@ export default function PGsPage() {
 
       {/* ── CTA Strip ───────────────────────────────────────────────────────── */}
       <section className="py-12 bg-primary">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h2 className="text-3xl font-black text-white mb-2">Ready to Move In?</h2>

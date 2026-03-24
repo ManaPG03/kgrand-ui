@@ -38,7 +38,7 @@ export default async function HotelDetailPage({ params }: Props) {
         />
         <div className="absolute inset-0 hero-gradient" />
         <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto">
             <p className="text-tertiary-fixed text-xs font-bold uppercase tracking-widest mb-2">
               {hotel.location}
             </p>
@@ -52,7 +52,7 @@ export default async function HotelDetailPage({ params }: Props) {
 
       {/* ── Stats Bar ────────────────────────────────────────────────────── */}
       <div className="bg-primary-container">
-        <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4">
             {hotel.stats.map((stat) => (
               <div
@@ -74,7 +74,7 @@ export default async function HotelDetailPage({ params }: Props) {
 
       {/* ── Description ──────────────────────────────────────────────────── */}
       <section className="py-12 bg-surface">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="max-w-3xl">
             <h2 className="text-xl font-extrabold text-primary mb-3">About This Property</h2>
             <p className="text-on-surface-variant leading-relaxed">{hotel.description}</p>
@@ -84,7 +84,7 @@ export default async function HotelDetailPage({ params }: Props) {
 
       {/* ── Rooms ────────────────────────────────────────────────────────── */}
       <section className="py-12 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="mb-8">
             <h2 className="text-3xl font-extrabold text-primary tracking-tight mb-2">
               Rooms &amp; Suites
@@ -100,7 +100,7 @@ export default async function HotelDetailPage({ params }: Props) {
 
       {/* ── Amenities ────────────────────────────────────────────────────── */}
       <section className="py-12 bg-surface">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="mb-8">
             <h2 className="text-3xl font-extrabold text-primary tracking-tight mb-2">
               Hotel Amenities
@@ -129,7 +129,7 @@ export default async function HotelDetailPage({ params }: Props) {
 
       {/* ── Location & Proximity ─────────────────────────────────────────── */}
       <section className="py-12 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="mb-8">
             <h2 className="text-3xl font-extrabold text-primary tracking-tight mb-2">
               Location &amp; Proximity
@@ -193,7 +193,7 @@ export default async function HotelDetailPage({ params }: Props) {
 
       {/* ── Booking CTA ──────────────────────────────────────────────────── */}
       <section className="py-12 bg-primary">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <span className="material-symbols-outlined text-tertiary-fixed text-3xl block mb-4">
               hotel

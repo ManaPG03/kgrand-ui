@@ -17,7 +17,7 @@ export default function HomePage() {
           />
           <div className="absolute inset-0 hero-gradient" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 w-full pt-16">
+        <div className="relative z-10 max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4 w-full pt-16">
           <div className="max-w-2xl">
             <span className="inline-block px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold text-xs tracking-wider uppercase mb-4">
               Luxury Living in Hyderabad
@@ -52,7 +52,7 @@ export default function HomePage() {
 
       {/* ── Stats Bar ─────────────────────────────────────────────────────── */}
       <div className="bg-primary-container">
-        <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {companyStats.map((stat) => (
               <div key={stat.label} className="text-center">
@@ -68,7 +68,7 @@ export default function HomePage() {
 
       {/* ── PG Collection ─────────────────────────────────────────────────── */}
       <section className="py-10 bg-surface">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-end mb-8 gap-4">
             <div>
               <h2 className="text-3xl font-extrabold text-primary mb-2 tracking-tight">
@@ -151,7 +151,7 @@ export default function HomePage() {
 
       {/* ── Why Kgrand Bento ──────────────────────────────────────────────── */}
       <section className="py-10 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="grid grid-cols-12 gap-6">
             <div className="col-span-12 lg:col-span-4 self-center">
               <h2 className="text-3xl font-extrabold text-primary mb-4 leading-tight">
@@ -226,7 +226,7 @@ export default function HomePage() {
 
       {/* ── Hotel Collection ──────────────────────────────────────────────── */}
       <section className="py-10 bg-surface-container-lowest">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center mb-8 gap-3">
             <h2 className="text-3xl font-extrabold text-primary tracking-tight">
               Our Hotel Collection
@@ -280,7 +280,7 @@ export default function HomePage() {
 
       {/* ── Community Hub ─────────────────────────────────────────────────── */}
       <section className="py-10 bg-surface overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="relative">
               <div className="absolute -top-10 -left-10 w-40 h-40 bg-tertiary-fixed rounded-full blur-3xl opacity-20" />
@@ -343,7 +343,7 @@ export default function HomePage() {
 
       {/* ── CTA Banner ────────────────────────────────────────────────────── */}
       <section className="py-10 bg-primary">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4 text-center">
           <h2 className="text-3xl font-black text-white mb-3">
             Ready to Find Your Perfect Space?
           </h2>

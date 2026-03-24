@@ -25,7 +25,7 @@ export default function AboutPage() {
           />
           <div className="absolute inset-0 hero-gradient" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 w-full pt-16">
+        <div className="relative z-10 max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4 w-full pt-16">
           <div className="max-w-2xl">
             <span className="inline-block px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold text-xs tracking-wider uppercase mb-4">
               Our Story
@@ -44,7 +44,7 @@ export default function AboutPage() {
 
       {/* ── Origin Story ──────────────────────────────────────────────────── */}
       <section className="py-12 bg-surface">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-3xl font-extrabold text-primary mb-4 tracking-tight">
@@ -95,7 +95,7 @@ export default function AboutPage() {
 
       {/* ── Values Bento Grid ─────────────────────────────────────────────── */}
       <section className="py-12 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-extrabold text-primary mb-2 tracking-tight">
               What We Stand For
@@ -147,7 +147,7 @@ export default function AboutPage() {
 
       {/* ── Founder Section ───────────────────────────────────────────────── */}
       <section className="py-12 bg-surface">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="bg-primary-container rounded-2xl p-6 md:p-8 shadow-ambient-lg">
               <div className="flex flex-col md:flex-row gap-6 items-start">
@@ -211,7 +211,7 @@ export default function AboutPage() {
 
       {/* ── Stats Bar ─────────────────────────────────────────────────────── */}
       <div className="bg-primary">
-        <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             {companyStats.map((stat) => (
               <div key={stat.label}>
@@ -227,7 +227,7 @@ export default function AboutPage() {
 
       {/* ── Life at Kgrand Imagery ─────────────────────────────────────────── */}
       <section className="py-12 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl min-[1920px]:max-w-[80%] mx-auto px-4">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-extrabold text-primary mb-2 tracking-tight">
               Life at Kgrand
