@@ -75,16 +75,16 @@ export default function SupportPage() {
                 key={pg.slug}
                 className="bg-surface-container-lowest rounded-2xl p-4 shadow-ambient hover:shadow-ambient-lg transition-all"
               >
-                <div className="flex items-start gap-3 mb-4">
+                <div className="flex items-start gap-4 mb-5">
                   <div className="w-10 h-10 bg-secondary-container rounded-xl flex items-center justify-center flex-shrink-0">
                     <span className="material-symbols-outlined text-primary">apartment</span>
                   </div>
                   <div>
-                    <span className="inline-block px-2 py-0.5 bg-primary-container text-on-primary-container text-[10px] font-bold rounded uppercase tracking-wider mb-1">
+                    <span className="inline-block px-2 py-1 bg-primary-container text-white text-[10px] font-bold rounded uppercase tracking-wider mb-1.5">
                       PG Residence
                     </span>
-                    <h3 className="font-bold text-primary text-sm leading-tight">{pg.name}</h3>
-                    <p className="text-on-surface-variant text-xs mt-0.5 flex items-center gap-1">
+                    <h3 className="font-bold text-primary text-sm leading-tight mt-1">{pg.name}</h3>
+                    <p className="text-on-surface-variant text-xs mt-2 flex items-center gap-1 -ml-1">
                       <span className="material-symbols-outlined text-xs">location_on</span>
                       {pg.location}
                     </p>
@@ -99,7 +99,7 @@ export default function SupportPage() {
                     Contact
                   </Link>
                   <a
-                    href={`https://wa.me/914012345678?text=${encodeURIComponent(`Hi Kgrand, I need support for ${pg.name}. Issue: `)}`}
+                    href={`https://wa.me/919703890611?text=${encodeURIComponent(`Hi Kgrand, I need support for ${pg.name}. Issue: `)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 flex items-center justify-center gap-1.5 bg-green-600 text-white text-xs font-bold py-2 rounded-lg hover:bg-green-700 transition-colors"
@@ -124,8 +124,8 @@ export default function SupportPage() {
                     <span className="inline-block px-2 py-0.5 bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-bold rounded uppercase tracking-wider mb-1">
                       Hotel
                     </span>
-                    <h3 className="font-bold text-primary text-sm leading-tight">{hotel.name}</h3>
-                    <p className="text-on-surface-variant text-xs mt-0.5 flex items-center gap-1">
+                    <h3 className="font-bold text-primary py-2 text-sm leading-tight">{hotel.name}</h3>
+                    <p className="text-on-surface-variant text-xs mt-1 -ml-1 flex items-center gap-1">
                       <span className="material-symbols-outlined text-xs">location_on</span>
                       {hotel.location}
                     </p>
@@ -140,7 +140,7 @@ export default function SupportPage() {
                     Contact
                   </Link>
                   <a
-                    href={`https://wa.me/914012345678?text=${encodeURIComponent(`Hi Kgrand, I need support for ${hotel.name}. Issue: `)}`}
+                    href={`https://wa.me/919703890611?text=${encodeURIComponent(`Hi Kgrand, I need support for ${hotel.name}. Issue: `)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 flex items-center justify-center gap-1.5 bg-green-600 text-white text-xs font-bold py-2 rounded-lg hover:bg-green-700 transition-colors"

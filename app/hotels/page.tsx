@@ -137,7 +137,7 @@ export default function HotelsPage() {
                 href={`/hotels/${hotel.slug}`}
                 className="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-ambient hover:shadow-ambient-lg transition-all block"
               >
-                <div className="relative aspect-[16/10]">
+                <div className="relative aspect-[16/10] overflow-hidden">
                   <Image
                     src={hotel.heroImage}
                     alt={hotel.heroAlt}

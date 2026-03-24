@@ -370,8 +370,8 @@ export const companyStats = [
 // ── Contact ────────────────────────────────────────────────────────────────────
 
 export const contact = {
-  phone: "+91 40 1234 5678",
-  whatsapp: "https://wa.me/914012345678?text=Hi%20Kgrand%2C%20I%27d%20like%20to%20enquire%20about%20your%20properties.",
+  phone: "+91 9703890611",
+  whatsapp: "https://wa.me/919703890611?text=Hi%20Kgrand%2C%20I%27d%20like%20to%20enquire%20about%20your%20properties.",
   email: "hello@kgrandresidences.com",
   address: "Plot No. 42, Hitech City Phase II, Madhapur, Hyderabad, Telangana 500081",
   supportHours: {
