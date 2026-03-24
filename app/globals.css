@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ─────────────────────────────────────────────────────────────────
-   KGRAND DESIGN SYSTEM — Tailwind v4 @theme
+   KGRAND DESIGN SYSTEM - Tailwind v4 @theme
    Edit the values below to update your entire design system.
 ───────────────────────────────────────────────────────────────── */
 @theme {
@@ -116,11 +116,9 @@ body {
   background: linear-gradient(135deg, #051125 0%, #1b263b 100%);
 }
 
-/* Glassmorphism nav */
+/* Solid nav */
 .glass-nav {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: #ffffff;
 }
 
 /* Ambient shadow utility */

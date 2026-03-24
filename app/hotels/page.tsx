@@ -88,7 +88,7 @@ export default function HotelsPage() {
                 icon: 'support_agent',
                 title: 'Dedicated Concierge',
                 description:
-                  'Your personal concierge handles everything — from restaurant reservations to airport transfers.',
+                  'Your personal concierge handles everything - from restaurant reservations to airport transfers.',
               },
             ].map((benefit) => (
               <div
@@ -136,13 +136,14 @@ export default function HotelsPage() {
                 key={hotel.slug}
                 className="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-ambient hover:shadow-ambient-lg transition-all"
               >
-                <div className="relative h-64">
+                <div className="relative aspect-[16/10]">
                   <Image
                     src={hotel.heroImage}
                     alt={hotel.heroAlt}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
+                  <div className="absolute inset-0 bg-primary/40" />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <div className="flex items-end justify-between gap-4">
@@ -196,14 +197,14 @@ export default function HotelsPage() {
                       </span>
                     ))}
                   </div>
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                     <div className="flex items-center gap-1.5 text-on-surface-variant text-sm">
                       <span className="material-symbols-outlined text-sm">location_on</span>
                       {hotel.location}
                     </div>
                     <Link
                       href={`/hotels/${hotel.slug}`}
-                      className="cta-gradient text-white px-5 py-2.5 rounded-lg font-bold text-sm flex items-center gap-2 hover:opacity-90 transition-opacity"
+                      className="cta-gradient text-white px-5 py-2.5 rounded-lg font-bold text-sm flex items-center justify-center gap-2 hover:opacity-90 transition-opacity w-full sm:w-auto"
                     >
                       View Details
                       <span className="material-symbols-outlined text-sm">arrow_forward</span>

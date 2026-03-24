@@ -18,7 +18,7 @@ const events = [
     date: 'Second Saturday of Each Month',
     icon: 'work',
     description:
-      'Start your weekend with purpose. Connect with fellow professionals across tech, finance, and design over a curated breakfast — facilitated by our community managers.',
+      'Start your weekend with purpose. Connect with fellow professionals across tech, finance, and design over a curated breakfast - facilitated by our community managers.',
     color: 'bg-secondary-container text-on-secondary-container',
   },
   {
@@ -40,11 +40,11 @@ const news = [
       'We are excited to announce the opening of a fully equipped fitness center at our flagship Hitech City property, available to all Kgrand residents 24/7.',
   },
   {
-    title: 'Kgrand Community App — Now Live',
+    title: 'Kgrand Community App - Now Live',
     date: 'February 28, 2026',
     icon: 'smartphone',
     excerpt:
-      'Our all-new resident app is here. Pay rent, raise maintenance tickets, RSVP to events, and connect with your community — all from one place.',
+      'Our all-new resident app is here. Pay rent, raise maintenance tickets, RSVP to events, and connect with your community - all from one place.',
   },
   {
     title: 'Chef Spotlight: Meet Our Head Chef Ramesh',
@@ -62,7 +62,7 @@ export default function CommunityPage() {
       <section className="relative h-[870px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9ttws497Ul5xO7OT9Xj-q1FPF7FeyiRfItluGMkhKYBplKQXYExds6PInyXIH-k3ozB9Ap2oXMcJXvUr9EvHgZxhfJUTOMI9zVk7pWTxJTIFNZDVU46uQimUjofxkzXZ3MkYVt-oM3tsGhc-cpUF7yE0IoZFPmKOin3fGOZg_s2mXIeKJT4NQRS8_KPHQzM4eoaZABvCAe_lDvoGIhNdoxVsTPg_rNXYDlpV8_aqGygrWT2r4uewzYAFDlqpGE-3rfOSSevhZM34K"
+            src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=80"
             alt="Kgrand community residents gathering"
             fill
             className="object-cover"
@@ -199,7 +199,7 @@ export default function CommunityPage() {
 
             <blockquote className="text-xl md:text-2xl font-bold text-white leading-relaxed mb-6">
               &ldquo;The strongest thing we&apos;ve built at Kgrand isn&apos;t the
-              buildings — it&apos;s the relationships formed inside them. Community isn&apos;t
+              buildings - it&apos;s the relationships formed inside them. Community isn&apos;t
               a feature. It&apos;s the whole point.&rdquo;
             </blockquote>
 

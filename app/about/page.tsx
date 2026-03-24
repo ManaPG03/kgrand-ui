@@ -34,7 +34,7 @@ export default function AboutPage() {
               The Kgrand Journey
             </h1>
             <p className="text-lg md:text-xl text-slate-200 leading-relaxed font-light">
-              Founded by Kotla Karthik, Kgrand was born from a simple belief — that every
+              Founded by Kotla Karthik, Kgrand was born from a simple belief - that every
               professional deserves a home that inspires them. From a single managed PG in
               Hitech City to a growing portfolio of premium residences across Hyderabad.
             </p>
@@ -58,14 +58,14 @@ export default function AboutPage() {
               </p>
               <p className="text-on-surface-variant leading-relaxed mb-4">
                 The first Kgrand property opened in Hitech City with just 20 beds. Word
-                spread quickly. Residents didn&apos;t just rent a room — they joined a
+                spread quickly. Residents didn&apos;t just rent a room - they joined a
                 community with chef-prepared meals, round-the-clock support, and a
                 management team that genuinely cared about their comfort.
               </p>
               <p className="text-on-surface-variant leading-relaxed">
                 Today, Kgrand manages 5 premium properties spanning PG residences and
                 boutique hotels, having served over 1,200 residents who trusted us with
-                one of life&apos;s most important decisions — where to call home.
+                one of life&apos;s most important decisions - where to call home.
               </p>
             </div>
 
@@ -76,7 +76,7 @@ export default function AboutPage() {
               </div>
               <blockquote className="text-lg font-medium text-white leading-relaxed mb-6">
                 &ldquo;I didn&apos;t just want to build PGs. I wanted to build places where
-                people could thrive — where coming home after a long day felt like a reward,
+                people could thrive - where coming home after a long day felt like a reward,
                 not an afterthought.&rdquo;
               </blockquote>
               <div className="flex items-center gap-3">
@@ -101,7 +101,7 @@ export default function AboutPage() {
               What We Stand For
             </h2>
             <p className="text-secondary max-w-xl mx-auto">
-              Three values guide every decision we make at Kgrand — from property design
+              Three values guide every decision we make at Kgrand - from property design
               to resident support.
             </p>
           </div>
@@ -126,7 +126,7 @@ export default function AboutPage() {
               <h3 className="text-lg font-bold text-white mb-2">Safety</h3>
               <p className="text-white/70 text-sm leading-relaxed">
                 Biometric entry, 24/7 CCTV, professional on-site guards, and a dedicated
-                manager ensure that every resident feels secure — day and night.
+                manager ensure that every resident feels secure - day and night.
               </p>
             </div>
 
@@ -175,7 +175,7 @@ export default function AboutPage() {
                     co-living accessible to every professional in Hyderabad&apos;s booming
                     tech ecosystem. With a background in hospitality management and a deep
                     understanding of what modern professionals need, Karthik built Kgrand
-                    from the ground up — personally overseeing every property launch and
+                    from the ground up - personally overseeing every property launch and
                     resident experience initiative.
                   </p>
                   <p className="text-on-surface-variant leading-relaxed mb-6">
@@ -211,7 +211,7 @@ export default function AboutPage() {
 
       {/* ── Stats Bar ─────────────────────────────────────────────────────── */}
       <div className="bg-primary">
-        <div className="max-w-7xl mx-auto px-4 py-6">
+        <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             {companyStats.map((stat) => (
               <div key={stat.label}>
@@ -245,7 +245,7 @@ export default function AboutPage() {
               >
                 <Image
                   src={src}
-                  alt={`Life at Kgrand — property ${idx + 1}`}
+                  alt={`Life at Kgrand - property ${idx + 1}`}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />

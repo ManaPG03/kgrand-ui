@@ -22,20 +22,21 @@ export default function Navigation() {
 
   return (
     <header className="fixed top-0 inset-x-0 z-50 glass-nav shadow-ambient">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <nav className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
         {/* Logo */}
-        <Link href="/" className="flex-shrink-0 flex items-center gap-2">
+        <Link href="/" className="flex-shrink-0 flex items-center">
           <Image
             src="/logo.png"
             alt="Kgrand"
-            width={120}
-            height={36}
-            className="h-9 w-auto object-contain"
+            width={200}
+            height={60}
+            className="h-18 w-auto object-contain -ml-4 -mr-3"
             priority
           />
+          <span className="text-xl font-black text-primary tracking-tight">KGrand</span>
         </Link>
 
-        {/* Center nav — desktop */}
+        {/* Center nav - desktop */}
         <ul className="hidden lg:flex items-center gap-1">
           {navLinks.map((link) => (
             <li key={link.href}>
@@ -53,7 +54,7 @@ export default function Navigation() {
           ))}
         </ul>
 
-        {/* Right CTA — desktop */}
+        {/* Right CTA - desktop */}
         <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
           <Link
             href="/enquire"
@@ -63,7 +64,7 @@ export default function Navigation() {
           </Link>
         </div>
 
-        {/* Hamburger — mobile */}
+        {/* Hamburger - mobile */}
         <button
           onClick={() => setMenuOpen((v) => !v)}
           className="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors"

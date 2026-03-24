@@ -16,7 +16,7 @@ const company = [
 export default function Footer() {
   return (
     <footer className="bg-primary text-on-primary-container">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 lg:pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
@@ -25,7 +25,7 @@ export default function Footer() {
             </span>
             <p className="text-on-primary-container text-sm leading-relaxed mb-6 max-w-sm">
               Premium co-living PGs and luxury hotels in Hyderabad's HITEC City corridor.
-              Managed living for modern professionals — comfort, community, and care.
+              Managed living for modern professionals - comfort, community, and care.
             </p>
             <div className="flex flex-col gap-2 text-sm">
               <a

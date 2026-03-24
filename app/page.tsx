@@ -52,7 +52,7 @@ export default function HomePage() {
 
       {/* ── Stats Bar ─────────────────────────────────────────────────────── */}
       <div className="bg-primary-container">
-        <div className="max-w-7xl mx-auto px-4 py-4">
+        <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {companyStats.map((stat) => (
               <div key={stat.label} className="text-center">
@@ -251,18 +251,18 @@ export default function HomePage() {
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent" />
+                  <div className="absolute inset-0 bg-primary/40" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent" />
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 p-6 flex flex-col sm:flex-row justify-between items-end gap-3">
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-1">{hotel.name}</h3>
-                    <p className="text-slate-200 text-sm">{hotel.tagline}</p>
-                  </div>
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-xl font-bold text-white mb-1">{hotel.name}</h3>
+                  <p className="text-slate-200 text-sm mb-3">{hotel.tagline}</p>
                   <Link
                     href={`/hotels/${hotel.slug}`}
-                    className="bg-white text-primary px-5 py-2.5 rounded-lg font-bold text-sm hover:shadow-xl transition-all whitespace-nowrap flex-shrink-0"
+                    className="bg-white text-primary px-5 py-2.5 rounded-lg font-bold text-sm hover:shadow-xl transition-all inline-flex items-center gap-2"
                   >
                     View Details
+                    <span className="material-symbols-outlined text-sm">arrow_forward</span>
                   </Link>
                 </div>
               </div>
@@ -288,14 +288,14 @@ export default function HomePage() {
               <div className="absolute -top-10 -left-10 w-40 h-40 bg-tertiary-fixed rounded-full blur-3xl opacity-20" />
               <div className="grid grid-cols-2 gap-3">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9ttws497Ul5xO7OT9Xj-q1FPF7FeyiRfItluGMkhKYBplKQXYExds6PInyXIH-k3ozB9Ap2oXMcJXvUr9EvHgZxhfJUTOMI9zVk7pWTxJTIFNZDVU46uQimUjofxkzXZ3MkYVt-oM3tsGhc-cpUF7yE0IoZFPmKOin3fGOZg_s2mXIeKJT4NQRS8_KPHQzM4eoaZABvCAe_lDvoGIhNdoxVsTPg_rNXYDlpV8_aqGygrWT2r4uewzYAFDlqpGE-3rfOSSevhZM34K"
+                  src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=80"
                   alt="Community event"
                   width={240}
                   height={300}
                   className="rounded-xl shadow-lg mt-6 w-full h-44 object-cover"
                 />
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7pW8DLWWqBQY7iQrZ3-Oa0RsY-xrCaDfXcUoD02QW79wg81Cq-uZXHvYtpyiphvtk8lMbYYz7Glblb-hkKzoET_GIi4crQ_B9QiOkvDBY5adiioMturvd6f8Yabu8HEBBigXAraqfxfd5MciMOw2PPYDZD6EOLqYPRCB12fGNopcyOm4FXtpSu1OGuWJAyGGAmgsHSfVfZFWyDI7SqWULXdZpMsyO7SfaETzjNCJn9JaDyC3tD5z6_3DOUuRM9TveHIaVszLn35a8"
+                  src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&q=80"
                   alt="Young professionals in a lounge"
                   width={240}
                   height={300}

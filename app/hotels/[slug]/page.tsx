@@ -51,7 +51,7 @@ export default async function HotelDetailPage({ params }: Props) {
 
       {/* ── Stats Bar ────────────────────────────────────────────────────── */}
       <div className="bg-primary-container">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4">
             {hotel.stats.map((stat) => (
               <div
@@ -99,7 +99,7 @@ export default async function HotelDetailPage({ params }: Props) {
                 key={room.name}
                 className="bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient hover:shadow-ambient-lg transition-all group"
               >
-                <div className="relative h-44">
+                <div className="relative aspect-[16/9]">
                   <Image
                     src={room.image}
                     alt={room.imageAlt}

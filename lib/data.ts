@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// KGRAND — Static Data Layer
+// KGRAND - Static Data Layer
 // Edit this file to update all property information across the site.
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -67,7 +67,7 @@ export const pgs: PG[] = [
     deposit: "2 Months Rent",
     rentType: "Fully Inclusive",
     heroImage:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDsXxBIW9qG1GoHvBR7bKxGJ6VIf_XgqPqzxT3C-vwR5mqX4B_jVFpg6_JmFdF2MdugDT6Oan3LC3tiFCJrk6Dp2HCr5u-0rJV7VFPxycv14mQcoayLhpRos831kDUOMJqNx0LD7R07j6JvO4uQ4TNHxamnzzWD-6o9Kd3WT29qKibrXm1O11hgETmHO2Fa5Rm5nsmaJxGOBIL0eAXNhE9zcNRZXQpSDDaCUseHm27CYqTBAP86incRIj6SZuC6QHqHmP49yXDKwdhR",
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&q=80",
     heroAlt: "Luxury PG room with premium wooden flooring and plush bedding",
     mapEmbed:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2960655696927!2d78.3719!3d17.4478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93dc8c5d69df%3A0x19688bbb8b33c5a2!2sHITEC%20City%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1711234567890!5m2!1sen!2sin",
@@ -81,20 +81,20 @@ export const pgs: PG[] = [
     ],
     galleryImages: [
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDsXxBIW9qG1GoHvBR7bKxGJ6VIf_XgqPqzxT3C-vwR5mqX4B_jVFpg6_JmFdF2MdugDT6Oan3LC3tiFCJrk6Dp2HCr5u-0rJV7VFPxycv14mQcoayLhpRos831kDUOMJqNx0LD7R07j6JvO4uQ4TNHxamnzzWD-6o9Kd3WT29qKibrXm1O11hgETmHO2Fa5Rm5nsmaJxGOBIL0eAXNhE9zcNRZXQpSDDaCUseHm27CYqTBAP86incRIj6SZuC6QHqHmP49yXDKwdhR",
+        src: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&q=80",
         alt: "Primary Suite",
         label: "Primary Suite",
       },
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuD2FwZxbCk7Z5Xgtru_RBu5BmKbUb-IvFxfbAOOghLECilhvvQib0Wxb5auVMQcS97t0R6wU26HAfdFGlbGT8ZkGxrbCPIsZnRakw0iirPtnWUNuBOrbt4hJMIVhoYoVPGmpYOMeN05mYdgfqkJvLy1BOHb5pOaqyRyxtk7uyrCaYPjOlX9sSgRXSChw0YYCaIUNos1z2wX-hxFNxgn8mPBL1UCxziWql77xGOSYuPeSLV5usPfGkXSouhSQ62vHCJjZk---FyFPAgF",
+        src: "https://images.unsplash.com/photo-1486946255434-2466348c2166?w=1200&q=80",
         alt: "Ergonomic workspace area",
       },
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBiCrqmP2pYvBrHlGpRk2u22tU1q_Q1cyKuoJKUoMaLLHBXNbw-N2hWOCvTg2uW7qkqK5qvMJ9xqOIjRNrgYigqOZqzq1UGRqu_iem-Nk2OZuXKjJanKeZhl8OgjSfM8AHaLPFoSZ32DiByOT9sNguk1r9kXhihlSBnh8IogL-OACYPt25EIlpxlWPoHu2towwIIMGZzjlK-YWjQvcKM1IFPlm8AJnsKQbPhOvVU_WqAdMhD8Gja3XJ6kvr13GZrx0_t586hyuvjdw5",
+        src: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
         alt: "Modern high-end bathroom with marble finishes",
       },
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAhF2eKN-F8swhkOI_oHKgqc2wr6etXhLfjBzWngxctcCboL7BNiQX9YI0JckwJPfdvxdmgi0_0HAdd3KicX0EkL9Z0pW8Ir1faH_ldm0ChwKdrbDVWw4BzPqkFeVq3-yVJupB4jwwGQaPA4PrIUT2y6GOf8Co_th5PXQo5ZNzPf0NDF-W7_Y8IKVAgeOZOAJo8pRiBvLLPsCy-mIkb73CjNNSLBJao82cPxhCeCMgE1lN08xn_RnHfyTEJzT8K-q4rawO_WoR5OE5o",
+        src: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80",
         alt: "Common dining area",
       },
     ],
@@ -124,7 +124,7 @@ export const pgs: PG[] = [
     deposit: "2 Months Rent",
     rentType: "Fully Inclusive",
     heroImage:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDa-k-_v1oKnbOf1ljzKeutqXcvG8ZxLbtzmRcKtNcOGFuFUXSLzCj_qsD0JMf8q8ZBXLtBHf63yxTZB920x0EeXdQRrFB1_h9qhQOrmlQaxChog4dNnDe91qG2fjkWSomzbIc1Z_BjH75zENYfnmZoYhuUwfpOx2269QJtf6MmmMcZsuaCsmt-NfJZeqd4sFEZm18BhNVdgWzzDaUhgTi9cz8ixD2CNMZGPC7jKKJ6-C27wzsqNpRoiB4afUKMBiYOfp37j3XugTsU",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80",
     heroAlt: "Elite shared living space with minimalist interior design",
     mapEmbed:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.8!2d78.358!3d17.44!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93cd85b2db91%3A0xdae72af90c04c1da!2sGachibowli%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1711234567892!5m2!1sen!2sin",
@@ -138,20 +138,20 @@ export const pgs: PG[] = [
     ],
     galleryImages: [
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDa-k-_v1oKnbOf1ljzKeutqXcvG8ZxLbtzmRcKtNcOGFuFUXSLzCj_qsD0JMf8q8ZBXLtBHf63yxTZB920x0EeXdQRrFB1_h9qhQOrmlQaxChog4dNnDe91qG2fjkWSomzbIc1Z_BjH75zENYfnmZoYhuUwfpOx2269QJtf6MmmMcZsuaCsmt-NfJZeqd4sFEZm18BhNVdgWzzDaUhgTi9cz8ixD2CNMZGPC7jKKJ6-C27wzsqNpRoiB4afUKMBiYOfp37j3XugTsU",
+        src: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80",
         alt: "Elite colive room interior",
         label: "Primary Room",
       },
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDsXxBIW9qG1GoHvBR7bKxGJ6VIf_XgqPqzxT3C-vwR5mqX4B_jVFpg6_JmFdF2MdugDT6Oan3LC3tiFCJrk6Dp2HCr5u-0rJV7VFPxycv14mQcoayLhpRos831kDUOMJqNx0LD7R07j6JvO4uQ4TNHxamnzzWD-6o9Kd3WT29qKibrXm1O11hgETmHO2Fa5Rm5nsmaJxGOBIL0eAXNhE9zcNRZXQpSDDaCUseHm27CYqTBAP86incRIj6SZuC6QHqHmP49yXDKwdhR",
+        src: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&q=80",
         alt: "Common lounge area",
       },
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAhF2eKN-F8swhkOI_oHKgqc2wr6etXhLfjBzWngxctcCboL7BNiQX9YI0JckwJPfdvxdmgi0_0HAdd3KicX0EkL9Z0pW8Ir1faH_ldm0ChwKdrbDVWw4BzPqkFeVq3-yVJupB4jwwGQaPA4PrIUT2y6GOf8Co_th5PXQo5ZNzPf0NDF-W7_Y8IKVAgeOZOAJo8pRiBvLLPsCy-mIkb73CjNNSLBJao82cPxhCeCMgE1lN08xn_RnHfyTEJzT8K-q4rawO_WoR5OE5o",
+        src: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80",
         alt: "Dining area",
       },
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuD2FwZxbCk7Z5Xgtru_RBu5BmKbUb-IvFxfbAOOghLECilhvvQib0Wxb5auVMQcS97t0R6wU26HAfdFGlbGT8ZkGxrbCPIsZnRakw0iirPtnWUNuBOrbt4hJMIVhoYoVPGmpYOMeN05mYdgfqkJvLy1BOHb5pOaqyRyxtk7uyrCaYPjOlX9sSgRXSChw0YYCaIUNos1z2wX-hxFNxgn8mPBL1UCxziWql77xGOSYuPeSLV5usPfGkXSouhSQ62vHCJjZk---FyFPAgF",
+        src: "https://images.unsplash.com/photo-1486946255434-2466348c2166?w=1200&q=80",
         alt: "Workspace area",
       },
     ],
@@ -181,7 +181,7 @@ export const pgs: PG[] = [
     deposit: "2 Months Rent",
     rentType: "Fully Inclusive",
     heroImage:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBWrYuDqLhbIfzru9j-WDey0WPOiKsjgMulj4IgjztJfy5iiRZ__6Nsz32AE7eFA8Qr0Vs_B7PTaUiBIWZBQALeUTL3C7s9vMZnjou74UdwPOe8HK7-LdhCPR1AxYXCNHjsBXhd9Dnf-wD5kMT_uc4fBus67EDYeARDpWhwA8aIaZ0uJs2F5G1gZPFqweZJbZkWvKyQP-gPfgf2CTzyqw62e-gQ59GeiPQl3eOtQS-tywXgq7T6ZPGVpzL8Ic2rl4bGTaEE4puUNgcn",
+      "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=1200&q=80",
     heroAlt: "Bright airy PG room with comfortable bedding and workspace",
     mapEmbed:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.1!2d78.3639!3d17.462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9151c26fd6a5%3A0xae4f200c09cb7f64!2sKondapur%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1711234567893!5m2!1sen!2sin",
@@ -195,20 +195,20 @@ export const pgs: PG[] = [
     ],
     galleryImages: [
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBWrYuDqLhbIfzru9j-WDey0WPOiKsjgMulj4IgjztJfy5iiRZ__6Nsz32AE7eFA8Qr0Vs_B7PTaUiBIWZBQALeUTL3C7s9vMZnjou74UdwPOe8HK7-LdhCPR1AxYXCNHjsBXhd9Dnf-wD5kMT_uc4fBus67EDYeARDpWhwA8aIaZ0uJs2F5G1gZPFqweZJbZkWvKyQP-gPfgf2CTzyqw62e-gQ59GeiPQl3eOtQS-tywXgq7T6ZPGVpzL8Ic2rl4bGTaEE4puUNgcn",
+        src: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=1200&q=80",
         alt: "Swarna colive room",
         label: "Standard Room",
       },
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDsXxBIW9qG1GoHvBR7bKxGJ6VIf_XgqPqzxT3C-vwR5mqX4B_jVFpg6_JmFdF2MdugDT6Oan3LC3tiFCJrk6Dp2HCr5u-0rJV7VFPxycv14mQcoayLhpRos831kDUOMJqNx0LD7R07j6JvO4uQ4TNHxamnzzWD-6o9Kd3WT29qKibrXm1O11hgETmHO2Fa5Rm5nsmaJxGOBIL0eAXNhE9zcNRZXQpSDDaCUseHm27CYqTBAP86incRIj6SZuC6QHqHmP49yXDKwdhR",
+        src: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&q=80",
         alt: "Common area",
       },
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAhF2eKN-F8swhkOI_oHKgqc2wr6etXhLfjBzWngxctcCboL7BNiQX9YI0JckwJPfdvxdmgi0_0HAdd3KicX0EkL9Z0pW8Ir1faH_ldm0ChwKdrbDVWw4BzPqkFeVq3-yVJupB4jwwGQaPA4PrIUT2y6GOf8Co_th5PXQo5ZNzPf0NDF-W7_Y8IKVAgeOZOAJo8pRiBvLLPsCy-mIkb73CjNNSLBJao82cPxhCeCMgE1lN08xn_RnHfyTEJzT8K-q4rawO_WoR5OE5o",
+        src: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80",
         alt: "Dining area",
       },
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuD2FwZxbCk7Z5Xgtru_RBu5BmKbUb-IvFxfbAOOghLECilhvvQib0Wxb5auVMQcS97t0R6wU26HAfdFGlbGT8ZkGxrbCPIsZnRakw0iirPtnWUNuBOrbt4hJMIVhoYoVPGmpYOMeN05mYdgfqkJvLy1BOHb5pOaqyRyxtk7uyrCaYPjOlX9sSgRXSChw0YYCaIUNos1z2wX-hxFNxgn8mPBL1UCxziWql77xGOSYuPeSLV5usPfGkXSouhSQ62vHCJjZk---FyFPAgF",
+        src: "https://images.unsplash.com/photo-1486946255434-2466348c2166?w=1200&q=80",
         alt: "Study area",
       },
     ],
@@ -236,7 +236,7 @@ export const hotels: Hotel[] = [
     pricePerNight: "₹4,500",
     rating: 4.9,
     heroImage:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDv6b4wCa5WuAvZYV97bZIl_1b9ztz39BcVvQWgWdzjYjZvlOCu4fnLGSyfZqWvSeIsXCmM7eqV7dwZFsekjzpvCwIKLefMHho_L8b",
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80",
     heroAlt: "Luxury hotel room interior with warm ambient lighting and executive desk",
     tagline: "Productive Stays for High-Achievers",
     description:
@@ -258,7 +258,7 @@ export const hotels: Hotel[] = [
         size: "450 sq ft",
         price: "₹5,499/night",
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuDvrRYkc735wXlpNDB0jamA4S9Y2hVk0f_k28J8lqWPJ02Er6qdoiGPfyD7X6mhhkEGhaJFBfkeyhPzqPeSLikinMHD4xfgTZwsF9Siop_M0qtNnc0NNMcap0dbJ810IVDinnl6JTeYUpCoO9iww4HBUIu2_NcQf89lBgfdsYbm4FpxGsNNxw-5GpHWH0_G-Gj46LjP_OFAtgmPhnptX1f9lfFgmzQ-VUfote3_mL_qpZly6nRZK0NCeXmNTT9MGjg7yYkY5jdWy7UZ",
+          "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1200&q=80",
         imageAlt: "Spacious king executive hotel suite with premium walnut furniture",
         features: ["King-size bed", "City view balcony", "Executive work desk", "Rain shower", "Smart TV", "Mini bar"],
       },
@@ -267,7 +267,7 @@ export const hotels: Hotel[] = [
         size: "380 sq ft",
         price: "₹4,299/night",
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuD652OFNwgATPZetM_yA3fG3OGxUmKUPcyAsPS8p9jOZhkcjOmtlJC91GA_1IMzniXoBM75Xh07XeaA7RnxQ3j0ClRbTnKTmQRooM75WfZa_kdMM3aHoAuasYatiwtTLKD0j4C5NGIXr2zaVaJyHCrMg5bYNdplJwiGJ8z8TzV5J1dERtDh6lbcRazJcptlh9B0uM8N6R4aAsdGSmsAIJiNNlje6YuZMd3qiNpzJWjQpg2MwMSZ8MVlXH74N0AgAUIctoo7LhuFlvdy",
+          "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200&q=80",
         imageAlt: "Elegant twin executive hotel room with warm lighting",
         features: ["Two single beds", "Work desk", "High-speed WiFi", "LCD TV", "In-room safe", "Daily housekeeping"],
       },
@@ -292,7 +292,7 @@ export const hotels: Hotel[] = [
     pricePerNight: "₹5,200",
     rating: 4.8,
     heroImage:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAY5wQrMQPRM_7xODX9aUx5j_VNP_sC1mRlAyEQibw48QNIgM44UfnUMPXodMFYYNtjWlIqFQkobfcFm0n7D6pYy2xLk-pIxkpCWoICBEeyjTyGlPmPkzRthLFjA91rWiseaincS7OZJY2seAFYUofnGtuW0qm9ytCJG4bhGfStyzkzeotNEBpX9UP6Lc53TxzboexPpX-MehzdbNMDCHXt0I6WOV9ievmOyChgqjgeq7jMg227ppPEuDwu7h3CN5l82ieHJ4gm86De",
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&q=80",
     heroAlt: "Luxury boutique hotel lobby with plush seating and modern design",
     tagline: "Executive Luxury in the Financial District",
     description:
@@ -314,7 +314,7 @@ export const hotels: Hotel[] = [
         size: "420 sq ft",
         price: "₹5,200/night",
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuD652OFNwgATPZetM_yA3fG3OGxUmKUPcyAsPS8p9jOZhkcjOmtlJC91GA_1IMzniXoBM75Xh07XeaA7RnxQ3j0ClRbTnKTmQRooM75WfZa_kdMM3aHoAuasYatiwtTLKD0j4C5NGIXr2zaVaJyHCrMg5bYNdplJwiGJ8z8TzV5J1dERtDh6lbcRazJcptlh9B0uM8N6R4aAsdGSmsAIJiNNlje6YuZMd3qiNpzJWjQpg2MwMSZ8MVlXH74N0AgAUIctoo7LhuFlvdy",
+          "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200&q=80",
         imageAlt: "Elegant executive suite with pool view",
         features: ["Pool view", "King bed", "Lounge access", "Smart TV", "Mini bar", "Rain shower"],
       },
@@ -323,7 +323,7 @@ export const hotels: Hotel[] = [
         size: "320 sq ft",
         price: "₹3,800/night",
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuDvrRYkc735wXlpNDB0jamA4S9Y2hVk0f_k28J8lqWPJ02Er6qdoiGPfyD7X6mhhkEGhaJFBfkeyhPzqPeSLikinMHD4xfgTZwsF9Siop_M0qtNnc0NNMcap0dbJ810IVDinnl6JTeYUpCoO9iww4HBUIu2_NcQf89lBgfdsYbm4FpxGsNNxw-5GpHWH0_G-Gj46LjP_OFAtgmPhnptX1f9lfFgmzQ-VUfote3_mL_qpZly6nRZK0NCeXmNTT9MGjg7yYkY5jdWy7UZ",
+          "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1200&q=80",
         imageAlt: "Modern deluxe studio with city skyline view",
         features: ["Queen bed", "City view", "Workspace", "Smart TV", "Kitchenette", "Daily housekeeping"],
       },

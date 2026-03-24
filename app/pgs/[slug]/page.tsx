@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { pgs, contact } from '@/lib/data';
+import GalleryLightbox from '@/components/GalleryLightbox';
 import type { Metadata } from 'next';
 
 export function generateStaticParams() {
@@ -18,7 +19,7 @@ export async function generateMetadata({
   if (!pg) return { title: 'Not Found' };
   return {
     title: pg.name,
-    description: `${pg.name} — premium co-living PG in ${pg.location}. Starting from ${pg.pricePerMonth}/mo.`,
+    description: `${pg.name} - premium co-living PG in ${pg.location}. Starting from ${pg.pricePerMonth}/mo.`,
   };
 }
 
@@ -47,8 +48,8 @@ export default async function PGDetailPage({
         />
         <div className="absolute inset-0 hero-gradient" />
 
-        <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
-          <div className="max-w-7xl mx-auto">
+        <div className="absolute bottom-0 left-0 right-0 pb-4 md:pb-6">
+          <div className="max-w-7xl mx-auto px-4">
             <span
               className={`inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider mb-2 ${
                 pg.badgeVariant === 'primary'
@@ -91,33 +92,9 @@ export default async function PGDetailPage({
 
       {/* ── Gallery ──────────────────────────────────────────────────────── */}
       {pg.galleryImages.length > 0 && (
-        <section className="py-6 bg-surface-container-low">
+        <section className="py-8 bg-surface-container-low">
           <div className="max-w-7xl mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-2 h-[400px]">
-              <div className="col-span-2 row-span-2 relative rounded-xl overflow-hidden">
-                <Image
-                  src={pg.galleryImages[0].src}
-                  alt={pg.galleryImages[0].alt}
-                  fill
-                  className="object-cover"
-                />
-                {pg.galleryImages[0].label && (
-                  <span className="absolute bottom-2 left-2 bg-black/60 text-white text-xs font-semibold px-2.5 py-1 rounded-full">
-                    {pg.galleryImages[0].label}
-                  </span>
-                )}
-              </div>
-              {pg.galleryImages.slice(1, 5).map((img) => (
-                <div key={img.src} className="relative rounded-xl overflow-hidden">
-                  <Image src={img.src} alt={img.alt} fill className="object-cover" />
-                  {img.label && (
-                    <span className="absolute bottom-2 left-2 bg-black/60 text-white text-xs font-semibold px-2 py-0.5 rounded-full">
-                      {img.label}
-                    </span>
-                  )}
-                </div>
-              ))}
-            </div>
+            <GalleryLightbox images={pg.galleryImages} />
           </div>
         </section>
       )}
@@ -335,19 +312,21 @@ export default async function PGDetailPage({
             Call Now
           </a>
           <div className="w-px bg-surface-container-high" />
-          <Link
-            href="/enquire"
-            className="flex-1 py-3 cta-gradient flex items-center justify-center gap-2 font-bold text-white hover:opacity-90 transition-opacity"
+          <a
+            href={contact.whatsapp}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 py-3 bg-[#25D366] flex items-center justify-center gap-2 font-bold text-white hover:opacity-90 transition-opacity"
           >
             <span className="material-symbols-outlined" style={{ fontSize: '20px' }}>
-              edit_note
+              chat
             </span>
-            Enquire Now
-          </Link>
+            WhatsApp Us
+          </a>
         </div>
       </div>
 
-      <div className="h-14 lg:hidden" />
+      <div className="h-20 lg:hidden" />
     </>
   );
 }

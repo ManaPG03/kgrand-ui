@@ -1,141 +1,5 @@
-'use client';
-
-import { useState } from 'react';
 import Link from 'next/link';
 import { pgs, hotels, contact } from '@/lib/data';
-
-// ── Client Component: Support Form ────────────────────────────────────────────
-
-function SupportForm() {
-  const [fields, setFields] = useState({
-    name: '',
-    email: '',
-    property: '',
-    issueType: '',
-    description: '',
-  });
-
-  function handleChange(
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
-  ) {
-    setFields((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  }
-
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    alert('Thank you! We will be in touch shortly.');
-  }
-
-  return (
-    <form
-      onSubmit={handleSubmit}
-      className="bg-surface-container-lowest rounded-2xl p-6 shadow-ambient space-y-4"
-    >
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div>
-          <label htmlFor="name" className="block text-sm font-bold text-primary mb-1">
-            Your Name
-          </label>
-          <input
-            id="name"
-            name="name"
-            type="text"
-            required
-            placeholder="Full name"
-            value={fields.name}
-            onChange={handleChange}
-            className="w-full px-4 py-2.5 rounded-lg border border-surface-container-high bg-surface focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-on-surface placeholder:text-on-surface-variant/50 transition"
-          />
-        </div>
-        <div>
-          <label htmlFor="email" className="block text-sm font-bold text-primary mb-1">
-            Email Address
-          </label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            required
-            placeholder="you@example.com"
-            value={fields.email}
-            onChange={handleChange}
-            className="w-full px-4 py-2.5 rounded-lg border border-surface-container-high bg-surface focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-on-surface placeholder:text-on-surface-variant/50 transition"
-          />
-        </div>
-      </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div>
-          <label htmlFor="property" className="block text-sm font-bold text-primary mb-1">
-            Property
-          </label>
-          <select
-            id="property"
-            name="property"
-            required
-            value={fields.property}
-            onChange={handleChange}
-            className="w-full px-4 py-2.5 rounded-lg border border-surface-container-high bg-surface focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-on-surface transition"
-          >
-            <option value="" disabled>Select property…</option>
-            {pgs.map((pg) => (
-              <option key={pg.slug} value={pg.slug}>{pg.name}</option>
-            ))}
-            {hotels.map((hotel) => (
-              <option key={hotel.slug} value={hotel.slug}>{hotel.name}</option>
-            ))}
-            <option value="general">General</option>
-          </select>
-        </div>
-        <div>
-          <label htmlFor="issueType" className="block text-sm font-bold text-primary mb-1">
-            Issue Type
-          </label>
-          <select
-            id="issueType"
-            name="issueType"
-            required
-            value={fields.issueType}
-            onChange={handleChange}
-            className="w-full px-4 py-2.5 rounded-lg border border-surface-container-high bg-surface focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-on-surface transition"
-          >
-            <option value="" disabled>Select issue type…</option>
-            <option value="maintenance">Maintenance Request</option>
-            <option value="billing">Billing Query</option>
-            <option value="housekeeping">Housekeeping</option>
-            <option value="security">Security Concern</option>
-            <option value="food">Meals &amp; Food</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-      </div>
-
-      <div>
-        <label htmlFor="description" className="block text-sm font-bold text-primary mb-1">
-          Description
-        </label>
-        <textarea
-          id="description"
-          name="description"
-          rows={3}
-          required
-          placeholder="Describe the issue in detail…"
-          value={fields.description}
-          onChange={handleChange}
-          className="w-full px-4 py-2.5 rounded-lg border border-surface-container-high bg-surface focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-on-surface placeholder:text-on-surface-variant/50 transition resize-none"
-        />
-      </div>
-
-      <button
-        type="submit"
-        className="w-full cta-gradient text-white font-bold py-3 px-6 rounded-lg flex items-center justify-center gap-2 hover:opacity-90 transition-opacity"
-      >
-        Submit Support Request
-        <span className="material-symbols-outlined">send</span>
-      </button>
-    </form>
-  );
-}
 
 // ── Page ─────────────────────────────────────────────────────────────────────
 
@@ -148,7 +12,7 @@ const faqs = [
   {
     question: 'What is included in the monthly rent?',
     answer:
-      'All our PGs are fully inclusive — meals (breakfast and dinner), WiFi, housekeeping, power backup, water, and access to all common amenities. There are no hidden charges.',
+      'All our PGs are fully inclusive - meals (breakfast and dinner), WiFi, housekeeping, power backup, water, and access to all common amenities. There are no hidden charges.',
   },
   {
     question: 'What is the notice period to vacate?',
@@ -188,19 +52,6 @@ export default function SupportPage() {
               Get help with maintenance, billing, or anything else. Our team is available
               seven days a week to ensure your Kgrand experience is always exceptional.
             </p>
-            <div className="relative max-w-xl mx-auto">
-              <div className="flex items-center bg-white/10 border border-white/20 rounded-xl px-4 py-3 backdrop-blur-md">
-                <span className="material-symbols-outlined text-white/60 mr-3">search</span>
-                <span className="text-white/50 text-sm">
-                  Search for help topics, FAQs, or property info…
-                </span>
-              </div>
-              <div className="absolute right-3 top-1/2 -translate-y-1/2">
-                <div className="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1.5 rounded-lg text-xs font-bold">
-                  Search
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -247,13 +98,15 @@ export default function SupportPage() {
                     <span className="material-symbols-outlined text-sm">call</span>
                     Contact
                   </Link>
-                  <Link
-                    href="/enquire"
-                    className="flex-1 flex items-center justify-center gap-1.5 bg-primary-container text-on-primary-container text-xs font-bold py-2 rounded-lg hover:bg-primary hover:text-white transition-colors"
+                  <a
+                    href={`https://wa.me/914012345678?text=${encodeURIComponent(`Hi Kgrand, I need support for ${pg.name}. Issue: `)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 flex items-center justify-center gap-1.5 bg-green-600 text-white text-xs font-bold py-2 rounded-lg hover:bg-green-700 transition-colors"
                   >
-                    <span className="material-symbols-outlined text-sm">confirmation_number</span>
-                    Raise Ticket
-                  </Link>
+                    <span className="material-symbols-outlined text-sm">chat</span>
+                    WhatsApp
+                  </a>
                 </div>
               </div>
             ))}
@@ -286,13 +139,15 @@ export default function SupportPage() {
                     <span className="material-symbols-outlined text-sm">call</span>
                     Contact
                   </Link>
-                  <Link
-                    href="/enquire"
-                    className="flex-1 flex items-center justify-center gap-1.5 bg-primary-container text-on-primary-container text-xs font-bold py-2 rounded-lg hover:bg-primary hover:text-white transition-colors"
+                  <a
+                    href={`https://wa.me/914012345678?text=${encodeURIComponent(`Hi Kgrand, I need support for ${hotel.name}. Issue: `)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 flex items-center justify-center gap-1.5 bg-green-600 text-white text-xs font-bold py-2 rounded-lg hover:bg-green-700 transition-colors"
                   >
-                    <span className="material-symbols-outlined text-sm">confirmation_number</span>
-                    Raise Ticket
-                  </Link>
+                    <span className="material-symbols-outlined text-sm">chat</span>
+                    WhatsApp
+                  </a>
                 </div>
               </div>
             ))}
@@ -300,20 +155,82 @@ export default function SupportPage() {
         </div>
       </section>
 
-      {/* ── General Support Form ─────────────────────────────────────────────── */}
-      <section className="py-12 bg-surface-container-low">
+      {/* ── Get in Touch CTA ──────────────────────────────────────────────── */}
+      <section className="py-16 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <div className="mb-6">
-              <h2 className="text-3xl font-extrabold text-primary mb-2 tracking-tight">
-                General Support
-              </h2>
-              <p className="text-secondary">
-                Not sure which property to select? Have a general question? Submit a
-                request and our team will route it to the right person.
-              </p>
-            </div>
-            <SupportForm />
+          <div className="max-w-4xl mx-auto text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-3 tracking-tight">
+              Get in Touch Instantly
+            </h2>
+            <p className="text-secondary text-lg max-w-2xl mx-auto">
+              Skip the forms. Reach us directly through your preferred channel and get a response within minutes.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            {/* WhatsApp */}
+            <a
+              href={contact.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative bg-green-600 rounded-2xl p-8 text-center text-white shadow-ambient-lg hover:shadow-2xl hover:scale-[1.03] transition-all overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="relative">
+                <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-4xl">chat</span>
+                </div>
+                <h3 className="text-xl font-extrabold mb-2">WhatsApp</h3>
+                <p className="text-white/80 text-sm mb-4">
+                  Chat with us now. Fastest way to get help.
+                </p>
+                <span className="inline-flex items-center gap-1 text-sm font-bold bg-white/20 px-4 py-2 rounded-full group-hover:bg-white/30 transition-colors">
+                  Open Chat
+                  <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                </span>
+              </div>
+            </a>
+
+            {/* Call */}
+            <a
+              href={`tel:${contact.phone}`}
+              className="group relative bg-primary rounded-2xl p-8 text-center text-white shadow-ambient-lg hover:shadow-2xl hover:scale-[1.03] transition-all overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-container opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="relative">
+                <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-4xl">call</span>
+                </div>
+                <h3 className="text-xl font-extrabold mb-2">Call Us</h3>
+                <p className="text-white/80 text-sm mb-4">
+                  Speak to our team directly. Available 7 days a week.
+                </p>
+                <span className="inline-flex items-center gap-1 text-sm font-bold bg-white/20 px-4 py-2 rounded-full group-hover:bg-white/30 transition-colors">
+                  {contact.phone}
+                  <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                </span>
+              </div>
+            </a>
+
+            {/* Email */}
+            <a
+              href={`mailto:${contact.email}?subject=${encodeURIComponent('Support Request - Kgrand')}`}
+              className="group relative bg-surface-container-lowest border-2 border-primary/10 rounded-2xl p-8 text-center shadow-ambient-lg hover:shadow-2xl hover:scale-[1.03] hover:border-primary/30 transition-all overflow-hidden"
+            >
+              <div className="relative">
+                <div className="w-16 h-16 bg-primary-container rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-4xl text-primary">mail</span>
+                </div>
+                <h3 className="text-xl font-extrabold text-primary mb-2">Email</h3>
+                <p className="text-on-surface-variant text-sm mb-4">
+                  Prefer email? We reply within a few hours.
+                </p>
+                <span className="inline-flex items-center gap-1 text-sm font-bold bg-primary-container text-on-primary-container px-4 py-2 rounded-full group-hover:bg-primary group-hover:text-white transition-colors">
+                  Send Email
+                  <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                </span>
+              </div>
+            </a>
           </div>
         </div>
       </section>

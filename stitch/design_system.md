@@ -3,7 +3,7 @@
 ## 1. Overview & Creative North Star
 The Creative North Star for this design system is **"The Curated Haven."** 
 
-While many PG (Paying Guest) and co-living platforms lean into cold, architectural minimalism or overly energetic "startup" aesthetics, this system carves out a third path. It combines the prestige of a luxury residence with the approachability of a community-focused home. We move away from the rigid, grid-heavy editorial look to embrace a "layered" philosophy—where elements feel softly nested rather than strictly partitioned. 
+While many PG (Paying Guest) and co-living platforms lean into cold, architectural minimalism or overly energetic "startup" aesthetics, this system carves out a third path. It combines the prestige of a luxury residence with the approachability of a community-focused home. We move away from the rigid, grid-heavy editorial look to embrace a "layered" philosophy-where elements feel softly nested rather than strictly partitioned. 
 
 By utilizing intentional asymmetry, generous breathing room (using our `24` and `20` spacing tokens), and soft corner radii (`12px` / `lg`), we create a digital environment that feels premium yet deeply practical. The goal is to move the user from "searching for a room" to "discovering their community."
 

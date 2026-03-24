@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Our PG Residences',
   description:
-    'Explore KGrand premium co-living PG residences across Hyderabad\'s IT corridor — Hitech City, Gachibowli, and Kondapur.',
+    'Explore KGrand premium co-living PG residences across Hyderabad\'s IT corridor - Hitech City, Gachibowli, and Kondapur.',
 };
 
 const commonAmenities = [
@@ -42,7 +42,7 @@ export default function PGsPage() {
               Our PG Residences
             </h1>
             <p className="text-lg md:text-xl text-slate-200 leading-relaxed font-light">
-              Premium co-living spaces across Hyderabad&apos;s IT corridor — Hitech City,
+              Premium co-living spaces across Hyderabad&apos;s IT corridor - Hitech City,
               Gachibowli, and Kondapur.
             </p>
           </div>
@@ -51,7 +51,7 @@ export default function PGsPage() {
 
       {/* ── Stats Bar ───────────────────────────────────────────────────────── */}
       <div className="bg-primary-container">
-        <div className="max-w-7xl mx-auto px-4 py-4">
+        <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { value: '3', label: 'Properties' },
@@ -182,7 +182,7 @@ export default function PGsPage() {
               Every Residence Includes
             </h2>
             <p className="text-secondary max-w-xl mx-auto">
-              All KGrand properties come with a core set of premium amenities — included in your monthly rent, no surprises.
+              All KGrand properties come with a core set of premium amenities - included in your monthly rent, no surprises.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
