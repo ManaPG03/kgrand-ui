@@ -375,7 +375,7 @@ export const contact = {
   email: "hello@kgrandresidences.com",
   address: "Plot No. 42, Hitech City Phase II, Madhapur, Hyderabad, Telangana 500081",
   supportHours: {
-    weekdays: "Monday – Saturday: 9:00 AM – 8:00 PM",
+    weekdays: "Monday – Sunday: 9:00 AM – 8:00 PM",
     weekend: "Sunday: 10:00 AM – 4:00 PM",
   },
 };
