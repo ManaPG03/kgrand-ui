@@ -87,20 +87,43 @@ export const pgs: PG[] = [
     galleryImages: [
       {
         src: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&q=80",
-        alt: "Primary Suite",
+        alt: "Primary suite with plush bedding",
         label: "Primary Suite",
       },
       {
         src: "https://images.unsplash.com/photo-1486946255434-2466348c2166?w=1200&q=80",
         alt: "Ergonomic workspace area",
+        label: "Workspace",
       },
       {
         src: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
         alt: "Modern high-end bathroom with marble finishes",
+        label: "Bathroom",
       },
       {
         src: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80",
         alt: "Common dining area",
+        label: "Dining",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200&q=80",
+        alt: "Bedroom with reading nook and warm lighting",
+        label: "Bedroom",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=1200&q=80",
+        alt: "Modern living lounge with sofa and coffee table",
+        label: "Lounge",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1571508601891-ca5e7a713859?w=1200&q=80",
+        alt: "Quiet study area with desk and plant",
+        label: "Study",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1200&q=80",
+        alt: "Premium bedroom with wood accents",
+        label: "Suite View",
       },
     ],
     proximity: [
@@ -147,19 +170,42 @@ export const pgs: PG[] = [
       {
         src: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80",
         alt: "Elite colive room interior",
-        label: "Primary Room",
+        label: "Twin Room",
       },
       {
         src: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&q=80",
         alt: "Common lounge area",
+        label: "Lounge",
       },
       {
         src: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80",
-        alt: "Dining area",
+        alt: "Dining area with chef-curated meals",
+        label: "Dining",
       },
       {
         src: "https://images.unsplash.com/photo-1486946255434-2466348c2166?w=1200&q=80",
-        alt: "Workspace area",
+        alt: "Dedicated workspace area",
+        label: "Workspace",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?w=1200&q=80",
+        alt: "Modern minimalist interior",
+        label: "Interior",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200&q=80",
+        alt: "Twin bedroom with wardrobe",
+        label: "Bedroom",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&q=80",
+        alt: "Recreation gaming lounge",
+        label: "Recreation",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
+        alt: "Modern bathroom",
+        label: "Bathroom",
       },
     ],
     proximity: [
@@ -206,19 +252,42 @@ export const pgs: PG[] = [
       {
         src: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=1200&q=80",
         alt: "Swarna colive room",
-        label: "Standard Room",
+        label: "Triple Sharing",
       },
       {
         src: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&q=80",
-        alt: "Common area",
+        alt: "Bright bedroom with comfortable bedding",
+        label: "Bedroom",
       },
       {
         src: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80",
-        alt: "Dining area",
+        alt: "Dining area for residents",
+        label: "Dining",
       },
       {
         src: "https://images.unsplash.com/photo-1486946255434-2466348c2166?w=1200&q=80",
-        alt: "Study area",
+        alt: "Study area with desk",
+        label: "Study",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1200&q=80",
+        alt: "Single sharing bedroom",
+        label: "Single Room",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&q=80",
+        alt: "Common social lounge",
+        label: "Common Lounge",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80",
+        alt: "Welcoming reception area",
+        label: "Reception",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
+        alt: "Shared bathroom with modern fixtures",
+        label: "Bathroom",
       },
     ],
     proximity: [

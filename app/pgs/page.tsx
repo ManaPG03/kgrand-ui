@@ -81,7 +81,7 @@ export default function PGsPage() {
               <Link
                 key={pg.slug}
                 href={`/pgs/${pg.slug}`}
-                className="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient hover:shadow-ambient-lg transition-all flex flex-col block"
+                className="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient hover:shadow-ambient-lg transition-all flex flex-col"
               >
                 <div className="relative h-52 flex-shrink-0">
                   <Image

@@ -111,7 +111,9 @@ export default function HomePage() {
                 <div className="p-4">
                   <h3 className="text-lg font-bold text-primary mb-1">{pg.name}</h3>
                   <div className="flex items-center gap-1.5 text-on-surface-variant text-sm mb-3">
-                    <span className="material-symbols-outlined text-sm">location_on</span>
+                    <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>
+                      location_on
+                    </span>
                     {pg.location}
                   </div>
                   <div className="grid grid-cols-2 gap-3 py-3 border-y border-surface-container-high mb-4">

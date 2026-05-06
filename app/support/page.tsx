@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { pgs, hotels, contact } from '@/lib/data';
 
@@ -32,11 +33,12 @@ export default function SupportPage() {
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
       <section className="relative h-[870px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src={pgs[2].heroImage}
             alt="Kgrand support"
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
+            priority
           />
           <div className="absolute inset-0 hero-gradient" />
         </div>

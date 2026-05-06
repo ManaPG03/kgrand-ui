@@ -4,6 +4,7 @@ import { contact } from '@/lib/data';
 const solutions = [
   { label: "Find a PG", href: '/pgs' },
   { label: "Book a Hotel", href: '/hotels' },
+  { label: "Photo Gallery", href: '/gallery' },
 ];
 
 const company = [
@@ -23,8 +24,8 @@ export default function Footer() {
               Kgrand Residences
             </span>
             <p className="text-on-primary-container text-sm leading-relaxed mb-6 max-w-sm">
-              Premium co-living PGs and luxury hotels in Hyderabad's HITEC City corridor.
-              Managed living for modern professionals - comfort, community, and care.
+              Premium co-living PGs and luxury hotels in Hyderabad&apos;s HITEC City corridor.
+              Managed living for modern professionals &mdash; comfort, community, and care.
             </p>
             <div className="flex flex-col gap-2 text-sm">
               <a
